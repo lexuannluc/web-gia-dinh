@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>99+ Mẫu Mộ Đá Đẹp Các Loại – Đá Mỹ Nghệ Ninh Bình</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Be Vietnam Pro',sans-serif;background:#f5f7fa;color:#222;font-size:15px}
+
+/* ── Category pills ── */
+.cat-pills-wrap{background:#fff;border-bottom:1px solid #e8edf2;padding:12px 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.cat-pills-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:8px}
+.cat-pill{display:inline-flex;align-items:center;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500;cursor:pointer;border:1.5px solid #d0dce8;background:#fff;color:#444;transition:all 0.15s;white-space:nowrap;user-select:none}
+.cat-pill:hover{border-color:#1565c0;color:#1565c0;background:#f0f6ff}
+.cat-pill.active{background:#1565c0;color:#fff;border-color:#1565c0}
+
+/* ── Main layout ── */
+.main-layout{display:flex;gap:0;max-width:1200px;margin:0 auto;padding:20px 24px;align-items:flex-start;gap:20px}
+
+/* ── Sidebar ── */
+.sidebar{width:210px;flex-shrink:0}
+.filter-group{background:#fff;border-radius:10px;margin-bottom:12px;box-shadow:0 1px 6px rgba(0,0,0,0.07);overflow:hidden}
+.filter-head{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;font-weight:700;font-size:14px;background:#fff;border-bottom:1px solid #f0f0f0}
+.filter-head .arrow{font-size:11px;color:#999;transition:transform 0.2s}
+.filter-body{padding:8px 16px 14px}
+.filter-option{display:flex;align-items:center;gap:9px;padding:5px 0;font-size:13.5px;cursor:pointer;color:#333}
+.filter-option input[type=radio]{accent-color:#1565c0;width:15px;height:15px;cursor:pointer}
+.filter-option:hover{color:#1565c0}
+
+/* ── Products area ── */
+.products-area{flex:1;min-width:0}
+.products-count{font-size:13px;color:#666;margin-bottom:14px}
+.products-count strong{color:#222}
+
+.products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.product-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 6px rgba(21,101,192,0.08);transition:box-shadow 0.22s,transform 0.22s;cursor:pointer;border:1px solid #eef2f7}
+.product-card:hover{box-shadow:0 8px 28px rgba(21,101,192,0.15);transform:translateY(-3px)}
+.product-img-wrap{height:170px;background:#f0f4f8;overflow:hidden;position:relative}
+.product-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s}
+.product-card:hover .product-img-wrap img{transform:scale(1.06)}
+.product-badge{position:absolute;top:8px;left:8px;background:rgba(21,101,192,0.85);color:#fff;font-size:10px;font-weight:700;padding:3px 7px;border-radius:4px;letter-spacing:0.03em}
+.product-info{padding:10px 11px 12px}
+.product-name{font-size:13px;font-weight:600;line-height:1.45;min-height:38px;color:#1a1a1a;display:-webkit-box;-webkit-line-clamp:2;line-clamp: 2;-webkit-box-orient:vertical;overflow:hidden}
+.product-meta{font-size:11px;color:#888;margin-top:4px}
+.btn-contact{display:block;width:100%;background:#1565c0;color:#fff;border:none;border-radius:6px;padding:8px 0;font-size:12.5px;font-weight:700;cursor:pointer;margin-top:8px;font-family:inherit;transition:background 0.15s;letter-spacing:0.02em}
+.btn-contact:hover{background:#0d47a1}
+
+.no-results{grid-column:1/-1;text-align:center;padding:48px;color:#aaa;font-size:14px}
+.loading-skeleton{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.skel-card{border-radius:10px;overflow:hidden;background:#fff;border:1px solid #eef2f7}
+.skel-img{height:170px;background:linear-gradient(90deg,#f0f0f0 25%,#e8e8e8 50%,#f0f0f0 75%);background-size:200% 100%;animation:shimmer 1.3s infinite}
+.skel-line{height:11px;border-radius:4px;margin:12px 11px 6px;background:linear-gradient(90deg,#f0f0f0 25%,#e8e8e8 50%,#f0f0f0 75%);background-size:200% 100%;animation:shimmer 1.3s infinite}
+.skel-line.s{width:60%;margin-top:0}
+.skel-btn{height:32px;border-radius:6px;margin:10px 11px 12px;background:linear-gradient(90deg,#f0f0f0 25%,#e8e8e8 50%,#f0f0f0 75%);background-size:200% 100%;animation:shimmer 1.3s infinite}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+
+.ss-dropdown{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,0.16),0 2px 10px rgba(21,101,192,0.1);z-index:99999;overflow:hidden;max-height:0;opacity:0;pointer-events:none;transition:max-height .3s cubic-bezier(.4,0,.2,1),opacity .2s ease}
+.ss-dropdown.open{max-height:500px;opacity:1;pointer-events:all}
+.ss-dropdown-inner{overflow-y:auto;max-height:500px}
+.ss-section-label{display:flex;align-items:center;gap:6px;padding:10px 14px 6px;font-size:11px;font-weight:700;color:#1565c0;letter-spacing:.06em;text-transform:uppercase;border-top:1px solid #edf4ff}
+.ss-section-label:first-child{border-top:none}
+.ss-item{display:flex;align-items:center;gap:10px;padding:8px 14px;cursor:pointer;text-decoration:none;color:inherit;transition:background .12s}
+.ss-item:hover{background:#f0f6ff}
+.ss-item-img{width:44px;height:44px;object-fit:cover;border-radius:6px;flex-shrink:0;background:#eef2f7}
+.ss-item-info{flex:1;min-width:0}
+.ss-item-name{font-size:13.5px;font-weight:600;color:#222;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ss-item-name mark{background:#fff3cd;color:#b45309;border-radius:2px;padding:0 1px}
+.ss-item-meta{font-size:11.5px;color:#888;margin-top:2px}
+.ss-badge{font-size:10px;font-weight:700;padding:2px 6px;border-radius:10px;flex-shrink:0}
+.ss-bp{background:#e3f0fc;color:#1565c0}
+.ss-bb{background:#fce8ff;color:#7b1fa2}
+.ss-empty{padding:24px;text-align:center;color:#aaa;font-size:13.5px}
+.ss-view-all{display:block;padding:10px 14px;text-align:center;font-size:12.5px;font-weight:700;color:#1565c0;background:#f5f9ff;cursor:pointer;border-top:1px solid #e3f0fc;text-decoration:none}
+.ss-view-all:hover{background:#e3f0fc}
+
+@media(max-width:960px){
+  .main-layout{flex-direction:column;padding:14px 16px}
+  .sidebar{width:100%}
+  .cat-pills-inner{padding:0 16px}
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .loading-skeleton{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:520px){
+  .products-grid{grid-template-columns:repeat(2,1fr)}
+  .products-grid .product-img-wrap{height:130px}
+}
+</style>
+<!-- CSS chung -->
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <!-- SmartSearch engine -->
+  <script src="/assets/js/smart-search.js"></script>
+
+  <!-- Load header tự động -->
+  <script src="/assets/js/load-header.js"></script>
+
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+
+
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Trang chủ</a>
+    <span>»</span>
+    <span>Mộ đá</span>
+  </div>
+</div>
+
+<!-- Page banner -->
+<div class="page-banner">
+  <div class="page-banner-inner">
+    <h1>Mộ đá</h1>
+  </div>
+</div>
+
+<!-- Category pills -->
+<div class="cat-pills-wrap">
+  <div class="cat-pills-inner" id="catPills">
+    <div class="cat-pill active" data-cat="all">Tất cả</div>
+    <div class="cat-pill" data-cat="granite">Mộ đá Granite</div>
+    <div class="cat-pill" data-cat="congiao">Mộ đá công giáo</div>
+    <div class="cat-pill" data-cat="doi">Mộ đá đôi</div>
+    <div class="cat-pill" data-cat="don">Mộ đá đơn</div>
+    <div class="cat-pill" data-cat="trang">Mộ đá trắng</div>
+    <div class="cat-pill" data-cat="tron">Mộ đá tròn</div>
+    <div class="cat-pill" data-cat="xanhden">Mộ đá xanh đen</div>
+    <div class="cat-pill" data-cat="bamai">Mộ ba mái đá</div>
+    <div class="cat-pill" data-cat="motmai">Mộ một mái đá</div>
+    <div class="cat-pill" data-cat="to">Mộ tổ đá</div>
+    <div class="cat-pill" data-cat="tamcap">Mộ đá tam cấp</div>
+    <div class="cat-pill" data-cat="haimai">Mộ hai mái đá</div>
+    <div class="cat-pill" data-cat="tamson">Mộ đá Tam Sơn</div>
+    <div class="cat-pill" data-cat="thap">Mộ tháp đá</div>
+    <div class="cat-pill" data-cat="xanhreu">Mộ đá xanh rêu</div>
+    <div class="cat-pill" data-cat="batgiac">Mộ đá bát giác</div>
+    <div class="cat-pill" data-cat="lucgiac">Mộ đá lục giác</div>
+  </div>
+</div>
+
+<!-- Main layout -->
+<div class="main-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="filter-group">
+      <div class="filter-head">Loại đá <span class="arrow">▾</span></div>
+      <div class="filter-body">
+        <label class="filter-option"><input type="radio" name="loaida" value="all" checked> Tất cả</label>
+        <label class="filter-option"><input type="radio" name="loaida" value="xanhden"> Đá xanh đen</label>
+        <label class="filter-option"><input type="radio" name="loaida" value="xanhreu"> Đá xanh rêu</label>
+        <label class="filter-option"><input type="radio" name="loaida" value="trang"> Đá trắng</label>
+        <label class="filter-option"><input type="radio" name="loaida" value="vang"> Đá vàng</label>
+        <label class="filter-option"><input type="radio" name="loaida" value="granite"> Đá Granite (Đá hoa cương)</label>
+        <label class="filter-option"><input type="radio" name="loaida" value="xanhrang"> Đá xanh trắng</label>
+      </div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-head">Kiểu mái <span class="arrow">▾</span></div>
+      <div class="filter-body">
+        <label class="filter-option"><input type="radio" name="kieunmai" value="all" checked> Tất cả</label>
+        <label class="filter-option"><input type="radio" name="kieunmai" value="khongmai"> Không mái</label>
+        <label class="filter-option"><input type="radio" name="kieunmai" value="motmai"> Một mái</label>
+        <label class="filter-option"><input type="radio" name="kieunmai" value="haimai"> Hai mái</label>
+        <label class="filter-option"><input type="radio" name="kieunmai" value="bamai"> Ba mái</label>
+        <label class="filter-option"><input type="radio" name="kieunmai" value="maivom"> Mái vòm</label>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Products -->
+  <div class="products-area">
+    <div class="products-count" id="productsCount"></div>
+    <div class="products-grid" id="productsGrid">
+      <!-- Skeleton loading -->
+      <div class="loading-skeleton" id="skeletonWrap">
+        <div class="skel-card"><div class="skel-img"></div><div class="skel-line"></div><div class="skel-line s"></div><div class="skel-btn"></div></div>
+        <div class="skel-card"><div class="skel-img"></div><div class="skel-line"></div><div class="skel-line s"></div><div class="skel-btn"></div></div>
+        <div class="skel-card"><div class="skel-img"></div><div class="skel-line"></div><div class="skel-line s"></div><div class="skel-btn"></div></div>
+        <div class="skel-card"><div class="skel-img"></div><div class="skel-line"></div><div class="skel-line s"></div><div class="skel-btn"></div></div>
+        <div class="skel-card"><div class="skel-img"></div><div class="skel-line"></div><div class="skel-line s"></div><div class="skel-btn"></div></div>
+        <div class="skel-card"><div class="skel-img"></div><div class="skel-line"></div><div class="skel-line s"></div><div class="skel-btn"></div></div>
+        <div class="skel-card"><div class="skel-img"></div><div class="skel-line"></div><div class="skel-line s"></div><div class="skel-btn"></div></div>
+        <div class="skel-card"><div class="skel-img"></div><div class="skel-line"></div><div class="skel-line s"></div><div class="skel-btn"></div></div>
+      </div>
+    </div>
+
+    <!-- Load more -->
+    <div class="load-more-wrap" id="loadMoreWrap" style="display:none">
+      <button class="btn-load-more" id="btnLoadMore">
+        <span id="loadMoreLabel">Xem thêm</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+    </div>
+
+    <!-- SEO content box -->
+    <div class="seo-box">
+      <h2>Mộ đá là gì? Tìm hiểu chi tiết về mộ đá đẹp tại Đá Mỹ Nghệ Ninh Bình</h2>
+      <p><strong>Mộ đá</strong> là một sản phẩm đá mỹ nghệ cao cấp, là công trình kiến trúc tâm linh được chế tác từ đá tự nhiên, sử dụng để chôn cất người đã khuất. Đá Mỹ Nghệ Ninh Bình là đơn vị uy tín hàng đầu, chuyên cung cấp và thi công đa dạng các loại mộ đá về cả kích thước lẫn mẫu mã, từ mộ đá đơn giản, mộ đá đôi, đến mộ đá hai mái, ba mái phức tạp,... được chế tác từ nhiều loại đá tự nhiên chất lượng như đá xanh đen, đá xanh rêu, đá trắng,... với mức giá hợp lý, chỉ từ <span class="price">6.000.000đ</span>, phù hợp với nhiều nhu cầu khác nhau.</p>
+
+      <div class="toc-wrap">
+        <div class="toc-head" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
+          <span>≡ Nội dung bài viết</span>
+          <span>▾</span>
+        </div>
+        <div class="toc-body">
+          <a href="#">1. Mộ đá là gì?</a>
+          <a href="#">2. Các loại mộ đá phổ biến</a>
+          <a href="#">3. Quy trình thi công mộ đá</a>
+          <a href="#">4. Bảng giá mộ đá</a>
+          <a href="#">5. Lưu ý khi chọn mộ đá</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SmartSearch styles & engine -->
+<script>
+(function(global) {
+  'use strict';
+  const ACCENT_MAP = {'àáâãäåāăąẩẫấầắặẳẵ':'a','èéêëēĕėęěẹẻẽếềệểễ':'e','ìíîïīĭįịỉĩ':'i','òóôõöōŏőọỏõốồổỗộớờởỡợ':'o','ùúûüūŭůűụủũứừửữự':'u','ỳýÿỵỷỹ':'y','đ':'d','ñ':'n'};
+  const AF = {};
+  for (const [chars, rep] of Object.entries(ACCENT_MAP)) {
+    for (const c of chars) { AF[c] = rep; AF[c.toUpperCase()] = rep.toUpperCase(); }
+  }
+  function rd(s) { return (s||'').replace(/./g, c => AF[c]||c).toLowerCase(); }
+  function tok(s) { return rd(s).replace(/[^a-z0-9\s]/g,' ').split(/\s+/).filter(Boolean); }
+
+  const SPINNER = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="display:block"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="44" stroke-dashoffset="32"><animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="0.7s" repeatCount="indefinite"/></circle></svg>`;
+  const ICON_SEARCH = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18" style="display:block"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
+
+  const SS = {
+    _data:{products:[],blogs:[]}, _loaded:false, _t:null,
+    init(cfg) {
+      this.cfg = Object.assign({inputSelector:'#mainSearchInput',maxProducts:5,maxBlogs:3,
+        dataUrls:{products:'/assets/data/mo-da.json',blogs:'/assets/data/blog.json'}}, cfg);
+      this._preload();
+      this._bindAll();
+    },
+    _preload() {
+      if (window.__SS_PRODUCTS__) { this._data.products = window.__SS_PRODUCTS__; }
+      const p1 = fetch(this.cfg.dataUrls.products).then(r=>r.json()).then(d=>{this._data.products=d||[];window.__SS_PRODUCTS__=d;}).catch(()=>{});
+      const p2 = fetch(this.cfg.dataUrls.blogs).then(r=>r.json()).then(d=>{this._data.blogs=d||[];}).catch(()=>{});
+      Promise.all([p1,p2]).then(()=>{this._loaded=true;});
+    },
+    _bindAll() {
+      document.querySelectorAll(this.cfg.inputSelector).forEach(inp=>this._bindInput(inp));
+    },
+    _bindInput(inp) {
+      const wrap = inp.closest('#headerSearchWrap,.header-search') || inp.parentElement;
+      if (wrap && getComputedStyle(wrap).position==='static') wrap.style.position='relative';
+      const btn = wrap.querySelector('button');
+      const drop = document.createElement('div');
+      drop.className='ss-dropdown';
+      drop.innerHTML='<div class="ss-dropdown-inner"></div>';
+      wrap.appendChild(drop);
+      inp.addEventListener('input', ()=>this._onInput(inp,drop,btn));
+      inp.addEventListener('focus', ()=>{ if(inp.value.trim().length>=1) this._onInput(inp,drop,btn); });
+      inp.addEventListener('keydown', e=>{
+        if(e.key==='Escape') this._close(drop,btn);
+        if(e.key==='Enter'){ const q=inp.value.trim(); if(q) window.location.href='/search/?q='+encodeURIComponent(q); }
+      });
+      if (btn) btn.addEventListener('click', ()=>{ const q=inp.value.trim(); if(q) window.location.href='/search/?q='+encodeURIComponent(q); });
+      document.addEventListener('click', e=>{ if(!wrap.contains(e.target)) this._close(drop,btn); });
+    },
+    _onInput(inp,drop,btn) {
+      clearTimeout(this._t);
+      const q=inp.value.trim();
+      if(!q){this._close(drop,btn);return;}
+      if(btn) btn.innerHTML=SPINNER;
+      this._showSkel(drop);
+      this._t=setTimeout(()=>this._run(q,drop,btn), this._loaded?180:500);
+    },
+    _run(q,drop,btn) { this._render(this._search(q),q,drop); if(btn) btn.innerHTML=ICON_SEARCH; },
+    _search(q) {
+      const qt=tok(q);
+      if(!qt.length) return {products:[],blogs:[]};
+      const sc=(name,extra=[])=>{const nf=rd(name);const cf=rd([name,...extra].join(' '));let s=0;for(const t of qt){if(nf.includes(t))s+=3;else if(cf.includes(t))s+=1;}if(q.length>2&&nf.startsWith(rd(q)))s+=5;return s;};
+      return {
+        products:this._data.products.map(p=>({...p,_s:sc(p.name,p.cat||[])})).filter(p=>p._s>0).sort((a,b)=>b._s-a._s).slice(0,this.cfg.maxProducts),
+        blogs:this._data.blogs.map(b=>({...b,_s:sc(b.title,b.tags||[])})).filter(b=>b._s>0).sort((a,b)=>b._s-a._s).slice(0,this.cfg.maxBlogs),
+      };
+    },
+    _hl(text,q){const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');let res=esc(text);for(const t of tok(q)){res=res.replace(new RegExp(`(${t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi'),'<mark>$1</mark>');break;}return res;},
+    _esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')},
+    _render(r,q,drop){
+      const inner=drop.querySelector('.ss-dropdown-inner');
+      const total=r.products.length+r.blogs.length;
+      let h='';
+      if(!total){h=`<div class="ss-empty">Không tìm thấy kết quả cho "<strong>${this._esc(q)}</strong>"</div>`;}
+      else{
+        if(r.products.length){
+          h+=`<div class="ss-section-label">🏛️ Sản phẩm (${r.products.length})</div>`;
+          r.products.forEach((p,i)=>{h+=`<a class="ss-item" href="${this._esc(p.link||'#')}"><img class="ss-item-img" src="${this._esc(p.image)}" alt="" loading="lazy" onerror="this.style.display='none'"><div class="ss-item-info"><div class="ss-item-name">${this._hl(p.name,q)}</div><div class="ss-item-meta">${this._catLbl(p.loaida)}</div></div><span class="ss-badge ss-bp">Sản phẩm</span></a>`;});
+        }
+        if(r.blogs.length){
+          h+=`<div class="ss-section-label">📰 Bài viết (${r.blogs.length})</div>`;
+          r.blogs.forEach((b,i)=>{h+=`<a class="ss-item" href="${this._esc(b.link||'#')}"><img class="ss-item-img" src="${this._esc(b.image)}" alt="" loading="lazy" onerror="this.style.display='none'"><div class="ss-item-info"><div class="ss-item-name">${this._hl(b.title,q)}</div><div class="ss-item-meta">${this._esc((b.excerpt||'').substring(0,60))}...</div></div><span class="ss-badge ss-bb">Bài viết</span></a>`;});
+        }
+        h+=`<a class="ss-view-all" href="/search/?q=${encodeURIComponent(q)}">Xem tất cả kết quả cho "<strong>${this._esc(q)}</strong>" →</a>`;
+      }
+      inner.innerHTML=h;
+      drop.classList.add('open');
+    },
+    _showSkel(drop){const inner=drop.querySelector('.ss-dropdown-inner');inner.innerHTML=[0,1,2].map(()=>`<div style="display:flex;align-items:center;gap:10px;padding:8px 14px"><div style="width:44px;height:44px;border-radius:6px;background:#f0f0f0;flex-shrink:0"></div><div style="flex:1"><div style="height:10px;background:#f0f0f0;border-radius:4px;margin-bottom:6px"></div><div style="height:9px;background:#f0f0f0;border-radius:4px;width:55%"></div></div></div>`).join('');drop.classList.add('open');},
+    _close(d,btn){d.classList.remove('open');if(btn)btn.innerHTML=ICON_SEARCH;},
+    _catLbl(v){return{xanhden:'Đá xanh đen',xanhreu:'Đá xanh rêu',trang:'Đá trắng',granite:'Đá Granite',vang:'Đá vàng'}[v]||v||''},
+  };
+  global.SmartSearch=SS;
+})(window);
+
+SmartSearch.init({
+  inputSelector: '#mainSearchInput',
+  maxProducts: 6,
+  maxBlogs: 3,
+  dataUrls: { products: '/assets/data/mo-da.json', blogs: '/assets/data/blog.json' }
+});
+
+</script>
+
+<!-- Product grid logic -->
+<script>
+(function () {
+  const PAGE_SIZE = 20;
+  let page = 1;
+  let activeLoai = 'all';
+  let activeMai = 'all';
+  let activeCat = 'all';  // from pills
+  let allProducts = [];
+
+  const grid = document.getElementById('productsGrid');
+  const skelWrap = document.getElementById('skeletonWrap');
+  const loadMoreWrap = document.getElementById('loadMoreWrap');
+  const btnLoadMore = document.getElementById('btnLoadMore');
+  const loadMoreLabel = document.getElementById('loadMoreLabel');
+  const countEl = document.getElementById('productsCount');
+
+  // Fetch products
+  fetch('/assets/data/mo-da.json')
+    .then(res => res.json())
+    .then(data => {
+      allProducts = data;
+      window.__SS_PRODUCTS__ = data; // share with SmartSearch
+      if (skelWrap) skelWrap.remove();
+      render();
+    })
+    .catch(() => {
+      if (skelWrap) skelWrap.remove();
+      grid.innerHTML = '<div class="no-results">❌ Không tải được dữ liệu. Vui lòng chạy qua local server.</div>';
+    });
+
+  function norm(s) {
+    return (s || '').toLowerCase()
+      .replace(/[àáâãạảắặầấậẩẫ]/g,'a').replace(/[èéêẹẻẽếềệểễ]/g,'e')
+      .replace(/[ìíîịỉĩ]/g,'i').replace(/[òóôõọỏốồộổỗớờợởỡ]/g,'o')
+      .replace(/[ùúûụủũứừựửữ]/g,'u').replace(/[ỳýỵỷỹ]/g,'y').replace(/đ/g,'d');
+  }
+
+  function getFiltered() {
+    return allProducts.filter(p => {
+      const loaiOk = activeLoai === 'all' || p.loaida === activeLoai;
+      const maiOk   = activeMai  === 'all' || p.kieunmai === activeMai;
+      const catOk   = activeCat  === 'all' || (p.cat && p.cat.includes(activeCat));
+      return loaiOk && maiOk && catOk;
+    });
+  }
+
+  function catLabel(v) {
+    return {xanhden:'Đá xanh đen',xanhreu:'Đá xanh rêu',trang:'Đá trắng',granite:'Đá Granite',vang:'Đá vàng'}[v] || v || '';
+  }
+  function maiLabel(v) {
+    return {khongmai:'Không mái',motmai:'1 mái',haimai:'2 mái',bamai:'3 mái',maivom:'Mái vòm'}[v] || v || '';
+  }
+
+  function render() {
+    const filtered = getFiltered();
+    const total = filtered.length;
+    const slice = filtered.slice(0, page * PAGE_SIZE);
+
+    // Remove old cards (keep skeleton if still there)
+    grid.querySelectorAll('.product-card,.no-results').forEach(el => el.remove());
+
+    if (!slice.length) {
+      grid.insertAdjacentHTML('beforeend', '<div class="no-results">Không tìm thấy sản phẩm phù hợp.</div>');
+      loadMoreWrap.style.display = 'none';
+      countEl.innerHTML = '';
+      return;
+    }
+
+    countEl.innerHTML = `Hiển thị <strong>${slice.length}</strong> / <strong>${total}</strong> sản phẩm`;
+
+    slice.forEach((p, i) => {
+      const card = document.createElement('div');
+      card.className = 'product-card';
+      card.innerHTML = `
+        <div class="product-img-wrap">
+          <img src="${p.image}" alt="${p.name}" loading="lazy"
+            onerror="this.parentNode.style.background='linear-gradient(135deg,#e3f0fc,#c5dff8)'">
+        </div>
+        <div class="product-info">
+          <div class="product-name">${p.name}</div>
+          <div class="product-meta">${catLabel(p.loaida)}${p.kieunmai ? ' · ' + maiLabel(p.kieunmai) : ''}</div>
+          <button class="btn-contact" onclick="event.stopPropagation()">LIÊN HỆ: 0912.98.67.98</button>
+        </div>`;
+      card.addEventListener('click', () => { if (p.link) window.location.href = p.link; });
+      grid.appendChild(card);
+    });
+
+    // Load more button
+    const remaining = total - slice.length;
+    if (remaining > 0) {
+      loadMoreWrap.style.display = 'block';
+      loadMoreLabel.textContent = `Xem thêm (${remaining} sản phẩm)`;
+    } else {
+      loadMoreWrap.style.display = 'none';
+    }
+  }
+
+  // Load more
+  btnLoadMore.addEventListener('click', () => {
+    page++;
+    render();
+    // Scroll to newly added items
+    const cards = grid.querySelectorAll('.product-card');
+    const firstNew = cards[Math.max(0, (page - 1) * PAGE_SIZE)];
+    if (firstNew) firstNew.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  // Category pills
+  document.querySelectorAll('.cat-pill').forEach(pill => {
+    pill.addEventListener('click', function () {
+      document.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+      this.classList.add('active');
+      activeCat = this.dataset.cat;
+      page = 1;
+      render();
+    });
+  });
+
+  // Sidebar filters
+  document.querySelectorAll('input[name="loaida"]').forEach(r =>
+    r.addEventListener('change', function () { activeLoai = this.value; page = 1; render(); }));
+  document.querySelectorAll('input[name="kieunmai"]').forEach(r =>
+    r.addEventListener('change', function () { activeMai = this.value; page = 1; render(); }));
+
+  // Search input filters grid
+  document.getElementById('mainSearchInput').addEventListener('input', function () {
+    const q = norm(this.value.trim());
+    grid.querySelectorAll('.product-card').forEach(card => {
+      const name = norm(card.querySelector('.product-name')?.textContent || '');
+      card.style.display = (!q || name.includes(q)) ? '' : 'none';
+    });
+  });
+})();
+</script>
+
+<!-- ✅ FOOTER tự động -->
+  <div id="site-footer"></div>
+  <script src="/assets/js/load-footer.js"></script>
+</body>
+</html>

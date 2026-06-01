@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giới thiệu về Đá mỹ nghệ Ninh Bình</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/js/smart-search.js"></script>
+  <script src="/assets/js/load-header.js"></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #b8860b;
+    --gold-light: #d4a017;
+    --dark: #1a1a1a;
+    --text: #333;
+    --muted: #666;
+    --bg: #faf9f7;
+    --white: #fff;
+    --border: #e0d9ce;
+    --accent-bg: #f5f0e8;
+    /* Container khớp với nav header */
+  }
+/* ÉP TOÀN BỘ NỘI DUNG TRANG HẸP LẠI TRÊN MÁY TÍNH */
+@media (min-width: 900px) {
+  .breadcrumb .container,
+  .content-wrap > .container,
+  .stats-section > .container {
+    max-width: 1150px !important;
+    width: 1150px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .page-title {
+    max-width: 1150px !important;
+    width: 1150px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+/* Máy tính: căn đều 2 bên */
+.main-content p,
+.main-content li {
+  text-align: justify;
+  text-align-last: left;
+}
+.main-content p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.main-content li {
+  line-height: 1.75;
+  margin-bottom: 8px;
+}
+.phone-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.phone-link:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+  /* =====================
+     VIDEO
+  ===================== */
+/*video nằm bên trái chữ*/
+.video-text-section {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 32px;
+  align-items: start;
+  margin: 30px 0;
+}
+
+.video-wrap {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.video-content h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.video-content p {
+  margin-bottom: 14px;
+  line-height: 1.8;
+}
+
+.video-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.video-content li {
+  margin-bottom: 10px;
+  line-height: 1.75;
+}
+@media (max-width: 768px) {
+  .video-text-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .video-wrap {
+    width: 100%;
+    height: 200px;
+  }
+}
+  /* Font toàn trang */
+  .content-wrap,
+  .content-wrapl,
+  .content-wrap p,
+  .content-wrap span,
+  .content-wrap div,
+  .content-wrap li,
+  .content-wrap a,
+  .content-wrap h1,
+  .content-wrap h2,
+  .content-wrap h3,
+  .content-wrap h4,
+  .content-wrap h5,
+  .content-wrap h6,
+  .breadcrumb,
+  .page-title,
+  .stats-section {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* =====================
+     CONTAINER - khớp nav
+  ===================== */
+
+  .main-content {
+    width: 100%;
+  }
+  .content-image {
+  width: 800px;
+  max-width: 100%;
+  height: 500px;
+  display: block;
+  margin: 18px auto 20px;
+  
+}
+  /* =====================
+     BREADCRUMB
+  ===================== */
+  .breadcrumb {
+    background: var(--accent-bg);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .breadcrumb .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .breadcrumb a { color: var(--gold); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+
+  /* =====================
+     PAGE TITLE
+  ===================== */
+  .page-title {
+    text-align: center;
+    padding: 28px 16px 20px;
+    margin-top: 0;
+  }
+  .page-title h1 {
+    font-size: clamp(16px, 4.5vw, 28px);
+    color: #000080;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .page-breadcrumb {
+    font-size: 14px;
+    color: #666;
+  }
+  .page-breadcrumb a {
+    text-decoration: none;
+    color: #2b65d9;
+  }
+  .page-breadcrumb a:hover { text-decoration: underline; }
+
+  /* =====================
+     CONTENT WRAP
+  ===================== */
+  .content-wrap {
+    padding: 30px 0 50px;
+    margin-top: -50px;
+  }
+
+  /* =====================
+     HEADINGS
+  ===================== */
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(16px, 3.5vw, 24px);
+  
+    line-height: 1.3;
+  }
+  p {
+    margin-bottom: 14px;
+    color: #444;
+    font-size: clamp(13px, 2vw, 15px);
+    line-height: 1.75;
+  }
+  strong { color: var(--dark); }
+
+
+  /* =====================
+     BANNER IMAGE
+  ===================== */
+  .banner-img {
+    width: 100%;
+    border-radius: 6px;
+    margin: 20px 0 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+    display: block;
+    height: auto;
+  }
+  .img-caption {
+    text-align: center;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  /* =====================
+     STATS SECTION
+  ===================== */
+        .tq-section {
+      margin-top: 48px;
+      position: relative;
+      width: 100%;
+      min-height: 340px;
+      background:
+        linear-gradient(rgba(20,40,30,0.55), rgba(20,40,30,0.55)),
+        url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80')
+        center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 48px;
+      overflow: hidden;
+    }
+ 
+    .tq-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 42px;
+      color: #fff;
+      margin-bottom: 18px;
+      text-align: center;
+      font-weight: 400;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+ 
+    .tq-desc {
+      color: rgba(255,255,255,0.92);
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 1100px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 32px;
+    }
+ 
+    .tq-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      width: 100%;
+      max-width: 1100px;
+    }
+ 
+    .tq-card {
+      background: rgba(255,255,255,0.18);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 10px;
+      padding: 20px 14px;
+      text-align: center;
+    }
+ 
+    .tq-num {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.1;
+    }
+ 
+    .tq-label {
+      font-size: 13px;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.5;
+    }
+ 
+   
+@media (max-width: 768px) {
+      .tq-section {
+        padding: 36px 16px;
+        min-height: unset;
+        align-items: stretch;
+      }
+      .tq-title {
+        font-size: 28px;
+        margin-bottom: 14px;
+        text-align: center;
+      }
+      .tq-desc {
+        font-size: 13px;
+        margin-bottom: 24px;
+        max-width: 100%;
+        width: 100%;
+      }
+      .tq-cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
+    margin: 0;
+   
+    box-sizing: border-box;
+  }
+
+  .tq-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 18px;
+    text-align: left;
+    min-height: 80px;
+    box-sizing: border-box;
+  }
+
+      .tq-num {
+        font-size: 26px;
+        margin-bottom: 0;
+        min-width: 90px;
+      }
+      .tq-label {
+        font-size: 13px;
+        flex: 1;
+        padding-left: 16px;
+        text-align: right;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+  /* =====================
+     CONTACT SECTION
+  ===================== */
+  .contact-section {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 20px;
+    margin-top: 40px;
+  }
+  .contact-section h2 { margin-top: 0; }
+  .contact-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .contact-info strong {
+    min-width: 130px;
+    flex-shrink: 0;
+    font-size: clamp(12px, 2vw, 14px);
+  }
+  .contact-info a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: clamp(12px, 2vw, 14px);
+    word-break: break-word;
+  }
+  .contact-info a:hover { text-decoration: underline; }
+  .contact-info p span,
+  .contact-info p {
+    font-size: clamp(12px, 2vw, 14px);
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 12px;
+    background: var(--accent-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .social-links a:hover {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+  }
+
+  .map-wrap {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  }
+  .map-wrap iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    display: block;
+  }
+
+  /* =====================
+     HIGHLIGHT BOX
+  ===================== */
+  .highlight-box {
+     background: #eaf4ff;
+    border-left: 4px solid #2d6a4f; /* xanh dương */
+    padding: 16px 18px;
+    border-radius: 0 6px 6px 0;
+    margin: 20px 0;
+  }
+  .highlight-box p {
+    margin: 0;
+    color: var(--dark);
+    font-weight: 500;
+    font-size: clamp(13px, 2vw, 15px);
+  }
+
+  /* =====================
+     NUMBERED LIST
+  ===================== */
+  .styled-ol {
+    list-style: none;
+    padding: 0;
+    counter-reset: ol-counter;
+  }
+  .styled-ol > li {
+    counter-increment: ol-counter;
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 18px;
+  }
+  .styled-ol > li::before {
+    content: counter(ol-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: #0066BF;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .styled-ol > li strong {
+    display: block;
+    font-size: clamp(14px, 2.5vw, 16px);
+    margin-bottom: 6px;
+    color: var(--dark);
+  }
+  .styled-ol > li ul {
+    padding-left: 16px;
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+
+  /* =====================
+     GOLD DIVIDER
+  ===================== */
+  .gold-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .gold-divider::before, .gold-divider::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .gold-divider span { color: var(--gold); font-size: 16px; }
+
+  /* =====================
+     TABLET (≥ 600px)
+  ===================== */
+@media (max-width: 600px) {
+  .breadcrumb .container,
+  .content-wrap > .container,
+  .contact-section,
+  .page-title {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+  
+/* Điện thoại: vẫn căn đều nhưng tránh bị dính sát lề */
+  .main-content p,
+  .main-content li {
+    text-align: justify;
+    text-align-last: left;
+  }
+      .content-image {
+    height: 200px !important;
+    width: 100% !important;
+    object-fit: cover;
+  }
+    .gallery-grid img {
+    height: 120px !important;
+  }
+  .content-wrap {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}
+/**/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CONTAINER */
+.content-wrap > .container,
+.content-wrapl > .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+/* TITLE */
+h2 {
+  
+  color: #000080;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.container .title-center {
+  text-align: center !important;
+}
+/* LAYOUT 2 CỘT */
+.section-flex {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* TEXT */
+.text-content p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.text-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.text-content li {
+  margin-bottom: 6px;
+}
+
+/* BOX */
+.highlight-box {
+  background: #eaf4ff;
+  border-left: 4px solid #2d6a4f;
+  padding: 14px;
+  border-radius: 0 6px 6px 0;
+  margin-top: 15px;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .section-flex {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Breadcrumb -->
+ <div class="container">
+ <div class="page-breadcrumb">
+      <a href="/">Trang chủ</a> » <span>Giới thiệu</span>
+  </div>
+  </div>
+
+<!-- Page Title -->
+<div class="content-wrapl">
+  <div class="page-title">
+    <h1>Tại Sao Bạn Nên Chọn Đá Mỹ Nghệ Lý Vân?</h1>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="content-wrap">
+  <div class="container">
+    <div class="main-content">
+
+      <h2>Hành Trình Gần 20 Năm Gìn Giữ Và Phát Triển Nghề Đá Truyền Thống</h2>
+
+      <p>Cơ sở Đá Mỹ Nghệ Lý Vân có trụ sở tại Quốc lộ 217, xã Vĩnh Thịnh, huyện Vĩnh Lộc, tỉnh Thanh Hóa – một vùng đất giàu truyền thống với làng nghề đá mỹ nghệ lâu đời. Nơi đây nổi tiếng với địa hình nhiều núi đá tự nhiên lớn, là nguồn tài nguyên quý giá được thiên nhiên ban tặng, đồng thời cũng là mỏ khai thác đá chủ yếu không chỉ của tỉnh Thanh Hóa mà còn của cả nước.</p>
+      <img src="/assets/img/anh-co-so-da-my-nghe-1.png" alt="Cơ Sở Đá Mỹ Nghệ Lý Vân" class="content-image"/>
+
+      <p>Từ lâu, xã Vĩnh Thịnh, huyện Vĩnh Lộc đã trở thành cái nôi của nghề điêu khắc đá truyền thống. Phần lớn nghệ nhân nơi đây là người bản địa, gắn bó với nghề qua nhiều thế hệ. Với kỹ thuật tinh xảo, sự am hiểu sâu sắc về chất liệu đá cùng tinh thần yêu nghề, các sản phẩm đá mỹ nghệ của làng luôn mang vẻ đẹp độc đáo, đậm chất văn hóa dân tộc.</p>
+
+      <p>Kế thừa truyền thống quý báu ấy, doanh nghiệp đã vươn mình trở thành một trong những đơn vị tiên phong trong lĩnh vực chế tác và thi công các công trình đá mỹ nghệ tại Việt Nam. Chúng tôi luôn đặt chữ “Tâm” và “Tín” lên hàng đầu trong từng sản phẩm và dịch vụ, cam kết mang đến cho khách hàng những công trình không chỉ đẹp về hình thức mà còn bền vững về chất lượng.</p>
+      <img src="/assets/img/anh-co-so-da-my-nghe-2.png" alt="Cơ Sở Đá Mỹ Nghệ Lý Vân" class="content-image"/>
+      <p>Từ các khu lăng mộ cổ kính, uy nghi cho đến những hạng mục kiến trúc tâm linh mang giá trị biểu tượng, Đá Mỹ Nghệ Lý Vân luôn chú trọng sự kết hợp hài hòa giữa nét truyền thống và ứng dụng công nghệ hiện đại. Nhờ đó, sản phẩm của chúng tôi không những giữ được bản sắc văn hóa mà còn đáp ứng yêu cầu khắt khe về kỹ thuật và thẩm mỹ.</p>
+
+      <p>Với hàng trăm công trình lớn nhỏ đã được thực hiện trên toàn quốc, Đá Mỹ Nghệ Lý Vân đã và đang nhận được sự tin tưởng, đánh giá cao từ đông đảo khách hàng gần xa. Chúng tôi tự hào là người kế thừa và phát huy giá trị truyền thống của làng nghề đá mỹ nghệ Vĩnh Thịnh – một thương hiệu văn hóa mang đậm dấu ấn Việt.</p>
+      <h2>Đội Ngũ Nghệ Nhân Giàu Kinh Nghiệm – Máy Móc Hiện Đại</h2>
+
+      <p>Chúng tôi tự hào sở hữu đội ngũ nghệ nhân và thợ đá lành nghề, được đào tạo bài bản và có bề dày kinh nghiệm trong lĩnh vực điêu khắc đá mỹ nghệ. Mỗi sản phẩm của Đá Mỹ Nghệ Lý Vân đều là sự kết tinh giữa tay nghề tinh xảo, óc sáng tạo và lòng đam mê với nghề của những con người yêu đá, yêu văn hóa truyền thống dân tộc.</p>
+      <img src="/assets/img/anh-co-so-da-my-nghe-3.png" alt="Cơ Sở Đá Mỹ Nghệ Lý Vân" class="content-image"/>
+
+      <p>Không chỉ giữ vững phương pháp thủ công tinh xảo, chúng tôi còn mạnh dạn đầu tư hệ thống máy móc hiện đại như máy điêu khắc CNC, máy cắt tia nước và các thiết bị hỗ trợ sản xuất công nghệ cao. Sự kết hợp giữa công nghệ và nghệ thuật giúp chúng tôi tạo ra những sản phẩm đạt độ chính xác tuyệt đối, đảm bảo sự đồng đều và tinh tế trên từng chi tiết hoa văn.</p>
+      <p>Ngoài ra, chúng tôi luôn sẵn sàng tư vấn, thiết kế các mẫu lăng mộ, các công trình đá theo nhu cầu sử dụng riêng của từng khách hàng, mang đến giải pháp tối ưu mang đến cả về công năng lẫn yếu tố tâm linh</p>
+      <p>Nếu quý khách có nhu cầu tư vấn, xin vui lòng liên hệ hotline: <a href="tel:0986367706" class="phone-link"> 0986.367.706</a> hoặc <a href="tel:0397677556" class="phone-link"> 0397.677.556</a> để được hỗ trợ tư vấn miễn phí.</p>
+      <h2>Nguyên Liệu Đá Tự Nhiên Tuyển Chọn – Nền Tảng Của Chất Lượng</h2>
+
+      <p>Nguồn nguyên liệu đá của chúng tôi được tuyển chọn kỹ lưỡng từ các mỏ đá lớn, uy tín tại Thanh Hóa – vùng đất nổi tiếng với trữ lượng và chất lượng đá tự nhiên hàng đầu Việt Nam. Các loại đá được sử dụng phổ biến tại cơ sở sản xuất của Đá Mỹ Nghệ Lý Vân gồm: đá xanh rêu, đá trắng, đá đen và đá vân mây. Mỗi loại đá mang vẻ đẹp và đặc trưng riêng biệt, có độ bền cao, chịu được thời tiết khắc nghiệt, phù hợp với các công trình tâm linh lâu dài.</p>
+      <p>Sở hữu xưởng sản xuất quy mô lớn ngay tại khu vực khai thác đá, Đá Mỹ Nghệ Lý Vân có khả năng chủ động hoàn toàn trong việc kiểm soát chất lượng đầu vào, đảm bảo tiến độ và độ chính xác tuyệt đối trong quá trình gia công. Đây cũng chính là yếu tố then chốt giúp chúng tôi giữ vững uy tín và chất lượng trên từng sản phẩm, dù là những hạng mục đơn lẻ hay công trình quy mô lớn.</p>
+      <h2>Sản Phẩm Tinh Tế – Thi Công Uy Tín – Dịch Vụ Tận Tâm</h2>
+      <p>Từ những khối đá thô sơ, tưởng như vô tri, dưới đôi bàn tay tài hoa của những người nghệ nhân Lý Vân, đã trở thành các công trình mang đậm dấu ấn nghệ thuật và văn hóa Việt Nam: lăng mộ đá các loại, nhà thờ họ, tượng đá, cổng đá, cuốn thư, lan can đá, bia đá, bàn thờ đá… Mỗi sản phẩm là một tác phẩm nghệ thuật, phản ánh chiều sâu của tín ngưỡng, phong tục tập quán và nét đẹp cổ truyền.</p>
+      <p>Chúng tôi không ngừng đổi mới và phát triển kho mẫu mã đa dạng, phù hợp với mọi phong cách kiến trúc và nhu cầu của khách hàng. Đặc biệt, chúng tôi nhận chế tác theo yêu cầu riêng, đảm bảo thiết kế mang tính cá nhân hóa, vừa hợp phong thủy, vừa giữ gìn giá trị truyền thống.</p>
+      <p>Với phương châm <strong style="font-weight: 900; color: #000;">“ Chất lượng tạo nên uy tín – Tâm huyết tạo nên giá trị ”</strong>, Đá Mỹ Nghệ Lý Vân cam kết mang đến cho khách hàng những công trình thi công đúng tiến độ, bền đẹp theo thời gian, và dịch vụ chu đáo, tận tâm.</p>
+      <h2>Tầm Nhìn của đá mỹ nghệ Lý Vân trong 10 Năm Tới</h2>
+      <p>Trong 10 năm tới, Đá Mỹ Nghệ Lý Vân đặt mục tiêu tiếp tục gìn giữ và phát huy tinh hoa nghề điêu khắc đá mỹ nghệ truyền thống, đồng thời đưa những sản phẩm tinh xảo mang đậm bản sắc văn hóa Việt vươn xa ra thị trường quốc tế.</p>
+      <p>Cụ thể:</p>
+      <ul>
+        <li><strong>Phát triển thương hiệu:</strong> Khẳng định vị thế và nâng cao uy tín của Đá Mỹ Nghệ Lý Vân trên thị trường trong nước và quốc tế, trở thành thương hiệu đá mỹ nghệ hàng đầu tại Việt Nam.</li>
+        <li><strong>Mở rộng thị trường:</strong>Tìm kiếm và khai thác các thị trường tiềm năng, đặc biệt là thị trường quốc tế nhằm đưa sản phẩm đá mỹ nghệ Lý Vân đến với khách hàng trên toàn cầu.</li>
+        <li><strong>Đổi mới sản phẩm:</strong>Không ngừng cải tiến mẫu mã, thiết kế, đảm bảo tính thẩm mỹ, sự đa dạng và giá trị tâm linh trong từng sản phẩm, đáp ứng nhu cầu ngày càng cao của khách hàng.</li>
+        <li><strong>Phát triển nguồn nhân lực:</strong> Chú trọng đào tạo đội ngũ nghệ nhân có tay nghề cao, kế thừa và phát triển những kỹ thuật điêu khắc truyền thống kết hợp công nghệ hiện đại.</li>
+        <li><strong>Bảo tồn và phát huy giá trị văn hóa:</strong>Góp phần lưu giữ và phát huy giá trị văn hóa nghệ thuật truyền thống, lan tỏa tinh thần tự hào dân tộc qua từng tác phẩm điêu khắc đá.</li>
+      </ul>
+
+      <p>Chúng tôi tin tưởng rằng:</p>
+      <ul>
+        <li>•	Với gần 20 năm kinh nghiệm trong ngành đá mỹ nghệ cùng đội ngũ nghệ nhân chuyên môn cao, Đá Mỹ Nghệ Lý Vân hoàn toàn đủ năng lực thực hiện tầm nhìn chiến lược đã đề ra.</li>
+        <li>•	Với lòng đam mê và tâm huyết dành cho nghề, chúng tôi cam kết mang đến những sản phẩm chất lượng vượt trội, đậm đà bản sắc văn hóa Việt.</li>
+        <li>•	Với sự đồng lòng và nỗ lực không ngừng của toàn thể cán bộ nhân viên, chúng tôi sẽ góp phần thúc đẩy sự phát triển bền vững cho ngành điêu khắc đá mỹ nghệ Việt Nam trên trường quốc tế.</li>
+      </ul>
+
+      <!-- Mission -->
+      <h2>Sứ Mệnh của Đá Mỹ Nghệ Lý Vân</h2>
+      <ol class="styled-ol">
+        <li>
+          <strong>Nâng tầm di sản:</strong>
+          <ul>
+            <li>	Gìn giữ và phát huy giá trị nghề truyền thống điêu khắc đá mỹ nghệ của dân tộc.</li>
+            <li>	Kế thừa tinh hoa văn hóa qua từng sản phẩm, lưu giữ bản sắc độc đáo của làng nghề đá Việt Nam.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Tiên phong sáng tạo:</strong>
+          <ul>
+            <li>Khẳng định vị thế là đơn vị chế tác đá mỹ nghệ hàng đầu tại Việt Nam.</li>
+            <li>Cung cấp các sản phẩm đá tinh xảo, mang tính thẩm mỹ cao, đáp ứng thị hiếu đa dạng.</li>
+            <li>Ứng dụng công nghệ hiện đại trong sản xuất, kết hợp hài hòa cùng kỹ thuật điêu khắc truyền thống.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Lan tỏa giá trị:</strong>
+          <ul>
+            <li>Giới thiệu nghề truyền thống đến đông đảo người dân Việt Nam và bạn bè quốc tế.</li>
+            <li>Góp phần phát triển văn hóa, du lịch và thương hiệu quốc gia thông qua sản phẩm điêu khắc nghệ thuật.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Cam kết của chúng tôi:</h3>
+        <li>Không ngừng nỗ lực để mang lại giá trị tốt nhất cho khách hàng cả về chất lượng sản phẩm lẫn dịch vụ.</li>
+        <li>Góp phần phát triển bền vững cho ngành đá mỹ nghệ Việt Nam.</li>
+        <li>Luôn gìn giữ và phát huy các giá trị văn hóa truyền thống trong từng sản phẩm.</li>
+      </ul>
+
+<!-- Video + Artisans -->
+<div class="video-text-section">
+  <div class="video-wrap">
+    <iframe 
+      src="https://www.youtube.com/embed/y5QYMIlJxyI?si=F3rPTIpTTzCiyajn" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="video-content">
+    <h2>Đội Ngũ Nghệ Nhân Chuyên Nghiệp Của Doanh Nghiệp Đá Mỹ Nghệ Lý Vân</h2>
+
+    <p>
+      Đá Mỹ Nghệ Lý Vân tự hào sở hữu đội ngũ nghệ nhân tài hoa, đầy đam mê và tận tâm với nghề, góp phần tạo dựng thương hiệu uy tín trong lĩnh vực điêu khắc đá mỹ nghệ.
+    </p>
+
+    <ul>
+      <li>Đội ngũ nghệ nhân của chúng tôi có chuyên môn cao, nhiều người từng tốt nghiệp từ các trường đại học mỹ thuật danh tiếng.</li>
+      <li>Với 8–10 năm kinh nghiệm thực tế trong nghề, các nghệ nhân luôn đảm bảo kỹ thuật điêu khắc tinh xảo, tỉ mỉ đến từng chi tiết.</li>
+      <li>Mỗi tác phẩm đều được “thổi hồn” để tạo nên giá trị thẩm mỹ và chiều sâu văn hóa, mang đậm dấu ấn cá nhân.</li>
+      <li><strong>Chúng tôi cam kết:</strong> mang đến cho khách hàng những sản phẩm điêu khắc đá chất lượng cao, giá thành hợp lý, đáp ứng mọi yêu cầu khắt khe nhất về kỹ thuật và thẩm mỹ.</li>
+    </ul>
+  </div>
+
+</div>
+<div class="container">
+
+  <h2 class="title-center">Lĩnh Vực Hoạt Động và Sản phẩm nhận điêu khắc</h2>
+
+  <div class="section-flex">
+
+    <!-- LEFT -->
+    <div class="text-content">
+      <p><strong>Đá Mỹ Nghệ Ninh Bình</strong> cung cấp các loại đá tự nhiên từ các mỏ đá khai thác trực tiếp:</p>
+
+      <ul>
+        <li>Đá ốp lát tự nhiên</li>
+        <li>Đá trang trí nội ngoại thất</li>
+        <li>Đá mỹ nghệ</li>
+        <li>Đồ thờ đá</li>
+        <li>Kiến trúc đá</li>
+      </ul>
+
+      <p>Thiết kế - thi công theo yêu cầu khách hàng.</p>
+
+      <p>Sản phẩm gồm:</p>
+
+      <ul>
+        <li>Lăng mộ đá</li>
+        <li>Khu lăng mộ đá</li>
+        <li>Đồ thờ đá</li>
+        <li>Tượng đá</li>
+        <li>Lan can</li>
+        <li>Kiến trúc đá</li>
+        <li>Cuốn thư</li>
+        <li>Lư hương đá</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p><strong>Phương châm:</strong> Đặt chất lượng lên hàng đầu, chú trọng từng chi tiết nhỏ nhất nhằm tạo ra những sản phẩm đạt giá trị thẩm mỹ cao, đáp ứng sự kỳ vọng và làm hài lòng mọi khách hàng đã tin tưởng lựa chọn chúng tôi.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="gallery-grid">
+      <img src="https://langmodadep.com/wp-content/uploads/image11-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image12-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image14-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image16-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image18-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image19-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image20-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image22-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image23-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image24-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image26-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image28-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image11-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image12-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image14-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image16-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image18-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image19-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image20-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image22-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image23-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image24-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image26-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image28-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image11-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image12-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image14-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image16-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image18-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image19-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image20-1-600x450.jpg">
+      <img src="https://langmodadep.com/wp-content/uploads/image22-1-600x450.jpg">
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Stats -->
+<section class="tq-section" id="tq-section">
+  <h2 class="tq-title">Thành quả của chúng tôi</h2>
+  <p class="tq-desc">
+    Với hơn 10 năm kinh nghiệm trong lĩnh vực thi công và thiết kế đá mỹ nghệ, Đá Mỹ Nghệ Ninh Bình
+    tự hào là đơn vị uy tín hàng đầu, mang đến cho khách hàng những sản phẩm đẳng cấp và thẩm mỹ cao.
+    Dưới đây là các thành quả trong suốt 10 năm hoạt động của cơ sở chúng tôi:
+  </p>
+  <div class="tq-cards">
+    <div class="tq-card">
+      <div class="tq-num" id="num0">0</div>
+      <div class="tq-label">Công trình, Dự án cả nước</div>
+    </div>
+    <div class="tq-card">
+      <div class="tq-num" id="num1">0</div>
+      <div class="tq-label">Khách hàng ghé thăm</div>
+    </div>
+    <div class="tq-card">
+      <div class="tq-num" id="num2">0</div>
+      <div class="tq-label">Sản phẩm đa dạng</div>
+    </div>
+    <div class="tq-card">
+      <div class="tq-num" id="num3">0</div>
+      <div class="tq-label">Khách hàng hài lòng</div>
+    </div>
+  </div>
+</section>
+<!-- Contact -->
+<div class="content-wrap" style="padding-top:0">
+  <div class="container">
+    <div class="main-content">
+      <div class="contact-section">
+        <h2>Liên hệ với chúng tôi</h2>
+        <div class="contact-info">
+          <p><strong>Trụ sở chính:</strong> <a href="https://maps.app.goo.gl/Ry8Ct8atcSkSSmj2A" target="_blank">Số nhà 8, ngõ 158 đường Trần Phú, phố Phúc Thiện, phường Phúc Thành, Ninh Bình</a></p>
+          <p><strong>Số điện thoại:</strong> <a href="tel:0912986798">0912.98.67.98</a></p>
+          <p><strong>Email:</strong> <a href="mailto:damynghe030@gmail.com">damynghe030@gmail.com</a></p>
+          <p><strong>Thời gian làm việc:</strong> <span>6:00–18:00 giờ mỗi ngày</span></p>
+          <p><strong>Website:</strong> <a href="https://langmodadep.com/" target="_blank">https://langmodadep.com/</a></p>
+        </div>
+
+        <p style="margin-top:18px;font-weight:600;color:var(--dark);font-size:14px;">Kết nối trên mạng xã hội:</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/damyngheninhbinhcom/" target="_blank">📘 Facebook</a>
+          <a href="https://www.flickr.com/people/damyngheninhbinhcom/" target="_blank">📷 Flickr</a>
+          <a href="https://www.pinterest.com/damyngheninhbinh01/" target="_blank">📌 Pinterest</a>
+          <a href="https://twitter.com/damynghenb_com" target="_blank">🐦 Twitter</a>
+          <a href="https://medium.com/@damynghenb" target="_blank">✍ Medium</a>
+        </div>
+
+        <p style="margin-top:20px;font-weight:600;color:var(--dark);font-size:14px;">Bản đồ chỉ đường:</p>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29946.165030614673!2d105.979342!3d20.247608!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752967f5b300e7%3A0x830884abf0ac6e7a!2zxJDDoSBN4bu5IE5naOG7hyBOaW5oIELDrG5o!5e0!3m2!1svi!2sus!4v1719629603366!5m2!1svi!2sus"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Bản đồ Đá Mỹ Nghệ Ninh Bình">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const targets = [
+    { id: 'num0', end: 1000, suffix: '+', format: v => v.toLocaleString('vi-VN') },
+    { id: 'num1', end: 1000, suffix: '+', format: v => v.toLocaleString('vi-VN') },
+    { id: 'num2', end: 1000, suffix: '+', format: v => v.toLocaleString('vi-VN') },
+    { id: 'num3', end: 98,   suffix: '%', format: v => v },
+  ];
+ 
+  function animateCount(el, end, suffix, format, duration) {
+    const startTime = performance.now();
+    function step(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); /* easeOutCubic */
+      const current = Math.round(eased * end);
+      el.textContent = format(current) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+ 
+  let animated = false;
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !animated) {
+      animated = true;
+      targets.forEach(t => {
+        const el = document.getElementById(t.id);
+        animateCount(el, t.end, t.suffix, t.format, 2200);
+      });
+    }
+  }, { threshold: 0.3 });
+ 
+  observer.observe(document.getElementById('tq-section'));
+</script>
+     </div>
+  </div>
+</div>
+<div id="contact-buttons"></div>
+<script>
+fetch("../contact-buttons.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("contact-buttons").innerHTML = data;
+  });
+</script>
+
+<div id="site-footer"></div>
+<script src="/assets/js/load-footer.js"></script>
+</body>
+</html>

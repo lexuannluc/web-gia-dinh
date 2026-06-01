@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>99+ mẫu mộ đá đẹp các loại</title>
+<link rel="stylesheet" href="../assets/style.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+  
+  /* ===== FIX FOUC: Ẩn body cho đến khi header load xong ===== */
+  body { visibility: hidden; }
+  body.header-ready { visibility: visible; }
+
+  /* ===== TẤT CẢ CSS ĐƯỢC SCOPE VÀO .mo-da-page ===== */
+  /* Chỉ áp dụng cho phần nội dung trang, KHÔNG ảnh hưởng header nhúng */
+
+  .mo-da-page {
+    --blue: #1565c0;
+    --blue-light: #1976d2;
+    --blue-btn: #1e88e5;
+    --blue-tag: #e3f0fc;
+    --blue-tag-border: #90caf9;
+    --text: #222;
+    --text-light: #555;
+    --border: #e0e0e0;
+    --bg: #f5f7fa;
+    --white: #fff;
+    --shadow: 0 2px 16px rgba(21,101,192,0.08);
+    --shadow-hover: 0 8px 32px rgba(21,101,192,0.18);
+    --radius: 8px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 15px;
+  }
+
+  /* Reset chỉ bên trong .mo-da-page */
+  .mo-da-page *, .mo-da-page *::before, .mo-da-page *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mo-da-page .breadcrumb { padding: 14px 32px 0; font-size: 13px; color: var(--text-light); }
+  .mo-da-page .breadcrumb a { color: var(--blue); text-decoration: none; }
+  .mo-da-page .breadcrumb span { margin: 0 6px; }
+
+  .mo-da-page .page-banner {
+    background: linear-gradient(135deg, #1565c0, #1976d2);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 18px 32px;
+    margin-top: 10px;
+  }
+
+  .mo-da-page .categories { margin: 20px 32px 0; }
+  .mo-da-page .categories h3 { font-size: 16px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .mo-da-page .categories h3::before { content: ''; display: inline-block; width: 4px; height: 18px; background: var(--blue); border-radius: 2px; }
+  .mo-da-page .cat-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .mo-da-page .cat-tag {
+    padding: 6px 14px; border: 1.5px solid var(--blue-tag-border); background: var(--blue-tag);
+    color: var(--blue); border-radius: 20px; font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: background 0.18s, color 0.18s, border-color 0.18s;
+  }
+  .mo-da-page .cat-tag:hover, .mo-da-page .cat-tag.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+  .mo-da-page .main-layout { display: flex; gap: 24px; padding: 24px 32px; align-items: flex-start; }
+
+  .mo-da-page .sidebar { width: 240px; min-width: 220px; flex-shrink: 0; }
+  .mo-da-page .filter-group { background: #fff; border-radius: var(--radius); margin-bottom: 16px; box-shadow: var(--shadow); overflow: hidden; }
+  .mo-da-page .filter-title {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 13px 16px; font-weight: 700; font-size: 15px; cursor: pointer;
+    user-select: none; background: #fff; border: none; width: 100%; text-align: left; transition: background 0.15s;
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+  .mo-da-page .filter-title:hover { background: #f5f9ff; }
+  .mo-da-page .filter-toggle-icon { width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; background: none; color: #1565c0; font-size: 20px; font-weight: 400; line-height: 1; flex-shrink: 0; }
+  .mo-da-page .filter-body-wrap { overflow: hidden; max-height: 0; transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1); }
+  .mo-da-page .filter-body-wrap.open { max-height: 400px; }
+  .mo-da-page .filter-body { display: flex; padding: 0; }
+  .mo-da-page .filter-bar { width: 4px; background: #222; flex-shrink: 0; margin: 8px 0; border-radius: 0 2px 2px 0; }
+  .mo-da-page .filter-options { padding: 8px 14px 12px 12px; flex: 1; }
+  .mo-da-page .filter-option { display: flex; align-items: center; gap: 9px; padding: 7px 0; cursor: pointer; font-size: 14px; color: var(--text); transition: color 0.15s; }
+  .mo-da-page .filter-option:hover { color: var(--blue); }
+  .mo-da-page .filter-option input[type="radio"],
+  .mo-da-page .filter-option input[type="checkbox"] { accent-color: var(--blue); width: 16px; height: 16px; cursor: pointer; }
+
+  .mo-da-page .products-area { flex: 1; min-width: 0; }
+  .mo-da-page .products-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+
+  .mo-da-page .product-card {
+    background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+    transition: box-shadow 0.28s cubic-bezier(.4,0,.2,1), transform 0.28s cubic-bezier(.4,0,.2,1);
+    display: flex; flex-direction: column; cursor: pointer; position: relative;
+  }
+  .mo-da-page .product-card:hover { box-shadow: 0 16px 40px rgba(21,101,192,0.18), 0 2px 8px rgba(21,101,192,0.08); transform: translateY(-6px) perspective(600px) rotateX(2deg); }
+  .mo-da-page .product-img-wrap { position: relative; overflow: hidden; height: 190px; background: #eee; }
+  .mo-da-page .product-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+  .mo-da-page .product-card:hover .product-img-wrap img { transform: scale(1.04); }
+  .mo-da-page .product-img-wrap::after {
+    content: ''; position: absolute; top: -60%; left: -80%; width: 50%; height: 220%;
+    background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.55) 50%, transparent 60%);
+    transform: skewX(-15deg); transition: none; pointer-events: none; opacity: 0;
+  }
+  .mo-da-page .product-card:hover .product-img-wrap::after { opacity: 1; animation: shine-sweep 0.55s ease forwards; }
+  @keyframes shine-sweep { 0% { left: -80%; opacity: 1; } 100% { left: 130%; opacity: 1; } }
+
+  .mo-da-page .product-info { padding: 12px 14px 14px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+  .mo-da-page .product-name { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.45; min-height: 40px; }
+  .mo-da-page .btn-contact {
+    display: block; width: 100%; background: var(--blue-btn); color: #fff; border: none;
+    border-radius: 5px; padding: 9px 0; font-size: 13px; font-weight: 700;
+    letter-spacing: 0.03em; cursor: pointer; text-align: center; transition: background 0.18s;
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+  .mo-da-page .btn-contact:hover { background: var(--blue); }
+  .mo-da-page .img-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 32px; color: #aaa; }
+  .mo-da-page .no-results { grid-column: 1/-1; text-align: center; color: var(--text-light); padding: 48px 0; font-size: 15px; }
+
+  .mo-da-page #btnLoadMore {
+    background: #1e88e5; color: #fff; border: none; border-radius: 24px; padding: 11px 32px;
+    font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center;
+    gap: 4px; box-shadow: 0 4px 14px rgba(30,136,229,0.25);
+    transition: background 0.18s, box-shadow 0.18s, transform 0.15s; letter-spacing: 0.02em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+  }
+  .mo-da-page #btnLoadMore:hover { background: #1565c0; box-shadow: 0 6px 20px rgba(21,101,192,0.32); transform: translateY(-2px); }
+  .mo-da-page #btnLoadMore:active { transform: translateY(0); }
+
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  .mo-da-page .card-appear { animation: fadeInUp 0.35s ease both; }
+
+  .mo-da-page .article-section { background: #fff; margin: 0 32px 32px; border-radius: 10px; box-shadow: 0 2px 16px rgba(21,101,192,0.07); overflow: hidden; }
+  .mo-da-page .article-inner { padding: 28px 32px 20px; }
+  .mo-da-page .article-h2 { font-size: 18px; font-weight: 700; color: #1565c0; margin-bottom: 14px; line-height: 1.5; }
+  .mo-da-page .article-h3 { font-size: 15px; font-weight: 700; color: #1565c0; margin: 20px 0 8px; padding-left: 10px; border-left: 3px solid #1e88e5; scroll-margin-top: 80px; }
+  .mo-da-page .article-inner p { font-size: 14px; color: #333; line-height: 1.75; margin-bottom: 10px; }
+  .mo-da-page .article-list { padding-left: 20px; margin-bottom: 10px; }
+  .mo-da-page .article-list li { font-size: 14px; color: #333; line-height: 1.75; margin-bottom: 6px; }
+
+  .mo-da-page .toc-box { border: 1.5px solid #d0e4f7; border-radius: 8px; margin-bottom: 20px; overflow: hidden; background: #f8fbff; }
+  .mo-da-page .toc-header { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; cursor: pointer; user-select: none; background: #f0f6ff; border: none; width: 100%; text-align: left; font-family: 'Be Vietnam Pro', sans-serif; transition: background 0.15s; }
+  .mo-da-page .toc-header:hover { background: #e3f0fc; }
+  .mo-da-page .toc-header-left { display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 700; color: #1565c0; }
+  .mo-da-page .toc-header-left svg { width: 18px; height: 18px; flex-shrink: 0; }
+  .mo-da-page .toc-arrow { width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; transition: transform 0.3s ease; color: #1565c0; }
+  .mo-da-page .toc-arrow.open { transform: rotate(180deg); }
+  .mo-da-page .toc-body { overflow: hidden; max-height: 0; transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1); }
+  .mo-da-page .toc-body.open { max-height: 500px; }
+  .mo-da-page .toc-list { list-style: none; padding: 10px 16px 14px; display: flex; flex-direction: column; gap: 2px; }
+  .mo-da-page .toc-list li { display: flex; align-items: baseline; gap: 10px; }
+  .mo-da-page .toc-num { font-size: 13px; font-weight: 700; color: #1565c0; min-width: 18px; flex-shrink: 0; }
+  .mo-da-page .toc-list a { font-size: 13.5px; color: #333; text-decoration: none; padding: 5px 0; display: block; transition: color 0.15s; line-height: 1.4; }
+  .mo-da-page .toc-list a:hover { color: #1565c0; text-decoration: underline; }
+
+  .mo-da-page .article-body { position: relative; overflow: hidden; transition: max-height 0.5s ease; }
+  .mo-da-page .article-body.collapsed { max-height: 0; }
+  .mo-da-page .article-body.expanded { max-height: 9999px; }
+
+  .mo-da-page .compare-table { overflow-x: auto; margin: 12px 0 16px; }
+  .mo-da-page .compare-table table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .mo-da-page .compare-table th { background: #1565c0; color: #fff; padding: 10px 12px; text-align: left; }
+  .mo-da-page .compare-table td { padding: 9px 12px; border-bottom: 1px solid #e3f0fc; vertical-align: top; }
+  .mo-da-page .compare-table tr:nth-child(even) td { background: #f5f9ff; }
+
+  .mo-da-page .price-tables { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 12px 0 8px; }
+  .mo-da-page .price-table-wrap { overflow-x: auto; }
+  .mo-da-page .price-table-title { font-size: 13px; font-weight: 700; color: #1565c0; margin-bottom: 6px; }
+  .mo-da-page .price-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .mo-da-page .price-table th { background: #1e88e5; color: #fff; padding: 8px 10px; text-align: center; }
+  .mo-da-page .price-table td { padding: 7px 10px; border-bottom: 1px solid #e3f0fc; text-align: center; }
+  .mo-da-page .price-table tr:nth-child(even) td { background: #f5f9ff; }
+  .mo-da-page .price-note { font-size: 13px; color: #666; background: #fff8e1; border-left: 3px solid #ffc107; padding: 10px 14px; border-radius: 4px; margin-top: 10px; }
+
+  .mo-da-page .contact-info-box { background: #f0f7ff; border-radius: 8px; padding: 16px 20px; margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
+  .mo-da-page .cib-row { font-size: 14px; color: #333; }
+  .mo-da-page .cib-row a { color: #1565c0; text-decoration: none; font-weight: 600; }
+
+  .mo-da-page .article-toggle-wrap { text-align: center; margin-top: 16px; padding-top: 14px; border-top: 1px dashed #c5dff8; }
+  .mo-da-page .article-toggle-btn { background: none; border: 1.5px solid #1e88e5; color: #1e88e5; border-radius: 20px; padding: 7px 22px; font-size: 13.5px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; transition: background 0.18s, color 0.18s; font-family: 'Be Vietnam Pro', sans-serif; }
+  .mo-da-page .article-toggle-btn:hover { background: #1e88e5; color: #fff; }
+
+  /* Scroll-to-top fixed button — scope bằng ID (ID là global, dùng body class để override) */
+  #scrollTopFixed {
+  position: fixed;
+  bottom: 10px;
+  right: 45px;
+  width: 44px;
+  height: 44px;
+  background: transparent;           /* nền trong suốt */
+  color: #fff;
+  border: 2px solid #ffffff;         /* viền trắng */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 999;
+}
+#scrollTopFixed.visible { opacity: 1; pointer-events: all; }
+#scrollTopFixed:hover { transform: translateY(-3px);   background:#0066bf;/* nền xanh khi hover */
+  border-color: #0066bf;      /* viền cũng chuyển xanh */ }
+
+  @media (max-width: 900px) {
+    .mo-da-page .price-tables { grid-template-columns: 1fr; }
+    .mo-da-page .article-section { margin: 0 12px 20px; }
+    .mo-da-page .main-layout { flex-direction: column; padding: 16px; }
+    .mo-da-page .sidebar { width: 100%; }
+    .mo-da-page .products-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+</style>
+
+</head>
+<body>
+
+  <!-- Header được nhúng từ file ngoài — KHÔNG bị ảnh hưởng bởi CSS trên -->
+  <div id="header-placeholder"></div>
+
+  <!-- Toàn bộ nội dung trang được bọc trong .mo-da-page -->
+  <div class="mo-da-page">
+
+    <div class="breadcrumb">
+      <a href="/">Trang chủ</a><span>»</span><strong>Mộ đá</strong>
+    </div>
+
+    <div class="page-banner">Mộ đá</div>
+
+    <div class="categories">
+      <h3>Hạng mục</h3>
+      <div class="cat-tags">
+        <span class="cat-tag active" data-cat="all">Tất cả</span>
+        <span class="cat-tag" data-cat="granite">Mộ đá Granite</span>
+        <span class="cat-tag" data-cat="congiao">Mộ đá công giáo</span>
+        <span class="cat-tag" data-cat="doi">Mộ đá đôi</span>
+        <span class="cat-tag" data-cat="don">Mộ đá đơn</span>
+        <span class="cat-tag" data-cat="trang">Mộ đá trắng</span>
+        <span class="cat-tag" data-cat="tron">Mộ đá tròn</span>
+        <span class="cat-tag" data-cat="xanhden">Mộ đá xanh đen</span>
+        <span class="cat-tag" data-cat="bamai">Mộ ba mái đá</span>
+        <span class="cat-tag" data-cat="motmai">Mộ một mái đá</span>
+        <span class="cat-tag" data-cat="to">Mộ tổ đá</span>
+        <span class="cat-tag" data-cat="tamcap">Mộ đá tam cấp</span>
+        <span class="cat-tag" data-cat="haimai">Mộ hai mái đá</span>
+        <span class="cat-tag" data-cat="tamson">Mộ đá Tam Sơn</span>
+        <span class="cat-tag" data-cat="thap">Mộ tháp đá</span>
+        <span class="cat-tag" data-cat="xanhreu">Mộ đá xanh rêu</span>
+        <span class="cat-tag" data-cat="batgiac">Mộ đá bát giác</span>
+        <span class="cat-tag" data-cat="lucgiac">Mộ đá lục giác</span>
+      </div>
+    </div>
+
+    <div class="main-layout">
+      <aside class="sidebar">
+        <div class="filter-group">
+          <button class="filter-title" onclick="toggleFilter(this)">
+            <span>Loại đá</span><span class="filter-toggle-icon">−</span>
+          </button>
+          <div class="filter-body-wrap open">
+            <div class="filter-body">
+              <div class="filter-bar"></div>
+              <div class="filter-options">
+                <label class="filter-option"><input type="radio" name="loaida" value="all" checked> Tất cả</label>
+                <label class="filter-option"><input type="radio" name="loaida" value="xanhden"> Đá xanh đen</label>
+                <label class="filter-option"><input type="radio" name="loaida" value="xanhreu"> Đá xanh rêu</label>
+                <label class="filter-option"><input type="radio" name="loaida" value="trang"> Đá trắng</label>
+                <label class="filter-option"><input type="radio" name="loaida" value="vang"> Đá vàng</label>
+                <label class="filter-option"><input type="radio" name="loaida" value="granite"> Đá Granite (Đá hoa cương)</label>
+                <label class="filter-option"><input type="radio" name="loaida" value="xanhtrang"> Đá xanh trắng</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-title" onclick="toggleFilter(this)">
+            <span>Kiểu mái</span><span class="filter-toggle-icon">−</span>
+          </button>
+          <div class="filter-body-wrap open">
+            <div class="filter-body">
+              <div class="filter-bar"></div>
+              <div class="filter-options">
+                <label class="filter-option"><input type="radio" name="kieunmai" value="all" checked> Tất cả</label>
+                <label class="filter-option"><input type="radio" name="kieunmai" value="khongmai"> Không mái</label>
+                <label class="filter-option"><input type="radio" name="kieunmai" value="motmai"> Một mái</label>
+                <label class="filter-option"><input type="radio" name="kieunmai" value="haimai"> Hai mái</label>
+                <label class="filter-option"><input type="radio" name="kieunmai" value="bamai"> Ba mái</label>
+                <label class="filter-option"><input type="radio" name="kieunmai" value="maivom"> Mái vòm</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="products-area">
+        <div class="products-grid" id="productsGrid">
+
+          <div class="product-card" data-cat="tron" data-loaida="xanhreu" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="/assets/img/483101643_1176126270754017_5891732576767282149_n.jpg" alt="Mộ đá tròn đẹp MTR 83" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2dfdb,#80cbc4)\'>🪨</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá tròn đẹp MTR 83</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="doi haimai" data-loaida="xanhden" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-doi-MDD62.jpg" alt="Lăng mộ đá đôi đẹp MDD 62" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#cfd8dc,#90a4ae)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Lăng mộ đá đôi đẹp MDD 62</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao doi" data-loaida="xanhden" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-doi-cong-giao-MCG067.jpg" alt="Mộ đá đôi công giáo đẹp MCG 067" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b0bec5,#78909c)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá đôi công giáo đẹp MCG 067</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tron trang" data-loaida="trang" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-tron-da-trang-tre-em.jpg" alt="Mộ tròn đá trắng cho người mất trẻ em" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#e0e0e0)\'>⬜</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tròn đá trắng cho người mất trẻ em cô...</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="motmai" data-loaida="xanhden" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-1-mai-da-MMM11.jpg" alt="Mẫu mộ 1 mái đá đẹp MMM 11" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c8e6c9,#81c784)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mẫu mộ 1 mái đá đẹp MMM 11</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhreu" data-loaida="xanhreu" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-xanh-reu-MXR68.jpg" alt="Mộ đá xanh rêu hậu bành MXR 68" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#a5d6a7,#66bb6a)\'>🪦</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá xanh rêu hậu bành MXR 68</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don tamcap xanhden" data-loaida="xanhden" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-don-tam-cap-MKM.jpg" alt="Mộ đá đơn giản tam cấp không mái MKM" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#cfd8dc,#b0bec5)\'>🏗️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá đơn giản tam cấp không mái đẹp MKM...</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="doi tamcap xanhden" data-loaida="xanhden" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-doi-3cap-MDD61.jpg" alt="Mộ đá đôi 3 cấp 5 cấp MDD 61" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b0bec5,#78909c)\'>⛩️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá đôi 3 cấp 5 cấp riêng tách biệt MDD 61</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="granite" data-loaida="granite" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-granite-MGR45.jpg" alt="Mộ đá Granite hoa cương đẹp MGR 45" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f8bbd0,#f48fb1)\'>💎</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá Granite hoa cương đẹp MGR 45</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="bamai" data-loaida="xanhden" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-ba-mai-da-MBM28.jpg" alt="Mộ ba mái đá đẹp cổ kính MBM 28" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe0b2,#ffb74d)\'>🏯</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ ba mái đá đẹp cổ kính MBM 28</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamson" data-loaida="xanhden" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-tam-son-MTS19.jpg" alt="Mộ đá Tam Sơn đẹp truyền thống MTS 19" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#d1c4e9,#b39ddb)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá Tam Sơn đẹp truyền thống MTS 19</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="thap" data-loaida="xanhden" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-thap-da-MTD07.jpg" alt="Mộ tháp đá đẹp Phật giáo MTD 07" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c5cae9,#9fa8da)\'>🗼</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tháp đá đẹp Phật giáo MTD 07</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="to haimai" data-loaida="xanhden" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-to-da-xanh-den-MTT15.jpg" alt="Mộ tổ đá xanh đen họ tộc MTT 15" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#dcedc8,#aed581)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tổ đá xanh đen họ tộc dòng họ MTT 15</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="trang haimai" data-loaida="trang" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-trang-doi-MDT33.jpg" alt="Mộ đá trắng đôi hai mái đẹp MDT 33" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#eeeeee)\'>🤍</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá trắng đôi hai mái đẹp MDT 33</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="batgiac" data-loaida="xanhden" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-bat-giac-MBG12.jpg" alt="Mộ đá bát giác đẹp phong thủy MBG 12" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2ebf2,#80deea)\'>🔷</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá bát giác đẹp phong thủy MBG 12</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="lucgiac" data-loaida="xanhreu" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-luc-giac-MLG05.jpg" alt="Mộ đá lục giác đẹp cao cấp MLG 05" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c8e6c9,#a5d6a7)\'>🔶</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá lục giác đẹp cao cấp MLG 05</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="haimai don" data-loaida="xanhden" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-hai-mai-da-don-MHM22.jpg" alt="Mộ hai mái đá đơn đẹp cổ điển MHM 22" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b0bec5,#90a4ae)\'>🏘️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ hai mái đá đơn đẹp cổ điển MHM 22</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao trang motmai" data-loaida="trang" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-cong-giao-trang-MCG88.jpg" alt="Mộ đá công giáo trắng đẹp MCG 88" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fce4ec,#f8bbd0)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá công giáo trắng đẹp MCG 88</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhreu tamcap" data-loaida="xanhreu" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-xanh-reu-tam-cap-MXR55.jpg" alt="Mộ đá xanh rêu tam cấp đẹp MXR 55" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#a5d6a7,#66bb6a)\'>🗺️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá xanh rêu tam cấp đẹp MXR 55</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="granite motmai" data-loaida="granite" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-granite-mot-mai-MGR71.jpg" alt="Mộ đá Granite hoa cương một mái MGR 71" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#ffd54f)\'>💛</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá Granite hoa cương một mái MGR 71</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don xanhden" data-loaida="xanhden" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-don-khong-mai-MDN21.jpg" alt="Mộ đá đơn không mái đẹp MDN 21" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2dfdb,#4db6ac)\'>🪨</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá đơn không mái đẹp MDN 21</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tron xanhreu" data-loaida="xanhreu" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-tron-da-xanh-reu-MTR22.jpg" alt="Mộ tròn đá xanh rêu đẹp MTR 22" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c8e6c9,#66bb6a)\'>⭕</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tròn đá xanh rêu đẹp MTR 22</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="granite haimai" data-loaida="granite" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-granite-hai-mai-MGR23.jpg" alt="Mộ Granite hai mái sang trọng MGR 23" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f8bbd0,#e91e63)\'>💎</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Granite hai mái sang trọng MGR 23</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao don trang" data-loaida="trang" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-cong-giao-da-trang-don-MCG24.jpg" alt="Mộ công giáo đá trắng đơn MCG 24" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#e8eaf6,#9fa8da)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ công giáo đá trắng đơn MCG 24</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="bamai xanhden" data-loaida="xanhden" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-ba-mai-da-xanh-den-MBM25.jpg" alt="Mộ ba mái đá xanh đen cổ điển MBM 25" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe0b2,#fb8c00)\'>🏯</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ ba mái đá xanh đen cổ điển MBM 25</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="doi xanhreu haimai" data-loaida="xanhreu" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-doi-xanh-reu-hai-mai-MDD26.jpg" alt="Mộ đá đôi xanh rêu hai mái MDD 26" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#a5d6a7,#2e7d32)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá đôi xanh rêu hai mái MDD 26</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamson xanhden" data-loaida="xanhden" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tam-son-xanh-den-MTS27.jpg" alt="Mộ Tam Sơn đá xanh đen MTS 27" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#d1c4e9,#7e57c2)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn đá xanh đen MTS 27</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamcap granite" data-loaida="granite" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-granite-tam-cap-MGR28.jpg" alt="Mộ đá Granite tam cấp MGR 28" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fff9c4,#f9a825)\'>🏗️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá Granite tam cấp MGR 28</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="thap trang" data-loaida="trang" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-thap-da-trang-MTD29.jpg" alt="Mộ tháp đá trắng đẹp MTD 29" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#bdbdbd)\'>🗼</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tháp đá trắng đẹp MTD 29</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhreu" data-loaida="xanhreu" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-xanh-reu-khong-mai-MXR30.jpg" alt="Mộ đá xanh rêu không mái MXR 30" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2dfdb,#00897b)\'>🪦</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá xanh rêu không mái MXR 30</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="haimai xanhden" data-loaida="xanhden" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-hai-mai-xanh-den-MHM31.jpg" alt="Mộ hai mái đá xanh đen MHM 31" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#cfd8dc,#546e7a)\'>🏘️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ hai mái đá xanh đen MHM 31</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="trang motmai" data-loaida="trang" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-trang-mot-mai-MDT32.jpg" alt="Mộ đá trắng một mái đẹp MDT 32" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#eeeeee,#e0e0e0)\'>🤍</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá trắng một mái đẹp MDT 32</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="lucgiac xanhden" data-loaida="xanhden" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-luc-giac-xanh-den-MLG33.jpg" alt="Mộ lục giác đá xanh đen MLG 33" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2ebf2,#0097a7)\'>🔷</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ lục giác đá xanh đen MLG 33</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="batgiac xanhreu" data-loaida="xanhreu" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-bat-giac-xanh-reu-MBG34.jpg" alt="Mộ bát giác đá xanh rêu MBG 34" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#dcedc8,#558b2f)\'>🔶</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ bát giác đá xanh rêu MBG 34</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="to bamai" data-loaida="xanhden" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-to-da-ba-mai-MTT35.jpg" alt="Mộ tổ đá ba mái dòng họ MTT 35" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c5cae9,#3949ab)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tổ đá ba mái dòng họ MTT 35</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don granite motmai" data-loaida="granite" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-don-granite-mot-mai-MDN36.jpg" alt="Mộ đơn Granite một mái đẹp MDN 36" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#ff6f00)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đơn Granite một mái đẹp MDN 36</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao doi xanhden" data-loaida="xanhden" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-doi-cong-giao-xanh-den-MCG37.jpg" alt="Mộ đôi công giáo đá xanh MCG 37" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fce4ec,#c62828)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đôi công giáo đá xanh MCG 37</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="motmai xanhreu" data-loaida="xanhreu" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-mot-mai-xanh-reu-MMM38.jpg" alt="Mộ một mái đá xanh rêu đẹp MMM 38" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f0f4c3,#afb42b)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ một mái đá xanh rêu đẹp MMM 38</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamson trang bamai" data-loaida="trang" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tam-son-da-trang-ba-mai-MTS39.jpg" alt="Mộ Tam Sơn đá trắng ba mái MTS 39" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#9e9e9e)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn đá trắng ba mái MTS 39</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tron granite" data-loaida="granite" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-tron-granite-vom-MTR40.jpg" alt="Mộ tròn Granite vòm đẹp MTR 40" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f8bbd0,#ad1457)\'>💎</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tròn Granite vòm đẹp MTR 40</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don trang motmai" data-loaida="trang" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-da-don-trang-MDN41.jpg" alt="Mộ đá đơn trắng đơn giản MDN 41" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#eceff1,#cfd8dc)\'>🤍</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá đơn trắng đơn giản MDN 41</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhden tamcap" data-loaida="xanhden" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-xanh-den-tam-cap-MXD42.jpg" alt="Mộ đá xanh đen tam cấp MXD 42" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b0bec5,#455a64)\'>⛰️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá xanh đen tam cấp MXD 42</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="doi trang haimai" data-loaida="trang" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-doi-da-trang-hai-mai-MDD43.jpg" alt="Mộ đôi đá trắng hai mái MDD 43" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#bdbdbd)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đôi đá trắng hai mái MDD 43</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="bamai xanhreu" data-loaida="xanhreu" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-ba-mai-xanh-reu-MBM44.jpg" alt="Mộ ba mái đá xanh rêu MBM 44" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c8e6c9,#388e3c)\'>🏯</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ ba mái đá xanh rêu MBM 44</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="granite tamcap" data-loaida="granite" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-granite-tam-cap-khong-mai-MGR45b.jpg" alt="Mộ Granite tam cấp không mái MGR 45B" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#f57f17)\'>💎</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Granite tam cấp không mái MGR 45B</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="thap xanhden" data-loaida="xanhden" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-thap-xanh-den-MTD46.jpg" alt="Mộ tháp đá xanh đen MTD 46" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#90a4ae,#263238)\'>🗼</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tháp đá xanh đen MTD 46</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao trang bamai" data-loaida="trang" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-cong-giao-trang-ba-mai-MCG47.jpg" alt="Mộ công giáo trắng ba mái MCG 47" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fce4ec,#e91e63)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ công giáo trắng ba mái MCG 47</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tron xanhden" data-loaida="xanhden" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-tron-xanh-den-MTR48.jpg" alt="Mộ tròn đá xanh đen MTR 48" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b0bec5,#37474f)\'>⭕</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tròn đá xanh đen MTR 48</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="to xanhreu haimai" data-loaida="xanhreu" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-to-xanh-reu-hai-mai-MTT49.jpg" alt="Mộ tổ đá xanh rêu hai mái MTT 49" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#a5d6a7,#1b5e20)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tổ đá xanh rêu hai mái MTT 49</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="motmai trang" data-loaida="trang" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-mot-mai-trang-dep-MMM50.jpg" alt="Mộ một mái đá trắng đẹp MMM 50" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#eeeeee,#9e9e9e)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ một mái đá trắng đẹp MMM 50</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamson granite bamai" data-loaida="granite" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tam-son-granite-MTS51.jpg" alt="Mộ Tam Sơn đá Granite cao cấp MTS 51" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#ff8f00)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn đá Granite cao cấp MTS 51</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="batgiac granite" data-loaida="granite" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-bat-giac-granite-MBG52.jpg" alt="Mộ bát giác Granite cao cấp MBG 52" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2ebf2,#006064)\'>🔷</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ bát giác Granite cao cấp MBG 52</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="lucgiac granite" data-loaida="granite" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-luc-giac-granite-MLG53.jpg" alt="Mộ lục giác Granite đẹp MLG 53" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#dcedc8,#33691e)\'>🔶</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ lục giác Granite đẹp MLG 53</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhden haimai doi" data-loaida="xanhden" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-xanh-den-hai-mai-doi-MXD54.jpg" alt="Mộ đá xanh đen hai mái đôi MXD 54" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#cfd8dc,#37474f)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá xanh đen hai mái đôi MXD 54</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don xanhreu khongmai" data-loaida="xanhreu" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-don-xanh-reu-khong-mai-MDN55.jpg" alt="Mộ đơn xanh rêu không mái MDN 55" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#a5d6a7,#2e7d32)\'>🪦</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đơn xanh rêu không mái MDN 55</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao xanhreu motmai" data-loaida="xanhreu" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-cong-giao-xanh-reu-MCG56.jpg" alt="Mộ công giáo đá xanh rêu một mái MCG 56" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2dfdb,#004d40)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ công giáo đá xanh rêu một mái MCG 56</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="trang tamcap" data-loaida="trang" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-trang-tam-cap-MDT57.jpg" alt="Mộ đá trắng tam cấp đẹp MDT 57" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#757575)\'>🤍</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá trắng tam cấp đẹp MDT 57</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="thap xanhreu" data-loaida="xanhreu" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-thap-xanh-reu-MTD58.jpg" alt="Mộ tháp đá xanh rêu MTD 58" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c8e6c9,#1b5e20)\'>🗼</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tháp đá xanh rêu MTD 58</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="to xanhden bamai" data-loaida="xanhden" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-to-xanh-den-ba-mai-MTT59.jpg" alt="Mộ tổ đá xanh đen ba mái MTT 59" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#90a4ae,#1a237e)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tổ đá xanh đen ba mái MTT 59</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="haimai xanhreu" data-loaida="xanhreu" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-hai-mai-xanh-reu-MHM60.jpg" alt="Mộ hai mái đá xanh rêu MHM 60" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#a5d6a7,#388e3c)\'>🏘️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ hai mái đá xanh rêu MHM 60</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="granite bamai doi" data-loaida="granite" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-granite-ba-mai-doi-MGR61.jpg" alt="Mộ Granite ba mái đôi MGR 61" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#e65100)\'>💎</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Granite ba mái đôi MGR 61</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamson xanhreu bamai" data-loaida="xanhreu" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tam-son-xanh-reu-MTS62.jpg" alt="Mộ Tam Sơn đá xanh rêu MTS 62" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2dfdb,#00695c)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn đá xanh rêu MTS 62</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don granite khongmai" data-loaida="granite" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-don-granite-khong-mai-MDN63.jpg" alt="Mộ đơn Granite không mái MDN 63" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fff9c4,#f57f17)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đơn Granite không mái MDN 63</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tron trang maivom" data-loaida="trang" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-tron-trang-vom-MTR64.jpg" alt="Mộ tròn đá trắng vòm MTR 64" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#9e9e9e)\'>⭕</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tròn đá trắng vòm MTR 64</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="batgiac trang" data-loaida="trang" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-bat-giac-trang-MBG65.jpg" alt="Mộ bát giác đá trắng MBG 65" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#e3f2fd,#1565c0)\'>🔷</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ bát giác đá trắng MBG 65</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhden motmai" data-loaida="xanhden" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-xanh-den-mot-mai-MXD66.jpg" alt="Mộ đá xanh đen một mái MXD 66" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#78909c,#263238)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá xanh đen một mái MXD 66</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao doi trang haimai" data-loaida="trang" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-cong-giao-doi-trang-MCG67.jpg" alt="Mộ công giáo đôi trắng hai mái MCG 67" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fce4ec,#880e4f)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ công giáo đôi trắng hai mái MCG 67</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="lucgiac trang" data-loaida="trang" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-luc-giac-trang-MLG68.jpg" alt="Mộ lục giác đá trắng MLG 68" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#616161)\'>🔶</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ lục giác đá trắng MLG 68</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="doi xanhden tamcap" data-loaida="xanhden" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-doi-xanh-den-tam-cap-MDD69.jpg" alt="Mộ đôi xanh đen tam cấp MDD 69" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b0bec5,#1a237e)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đôi xanh đen tam cấp MDD 69</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamcap xanhreu" data-loaida="xanhreu" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tam-cap-xanh-reu-MXR70.jpg" alt="Mộ tam cấp đá xanh rêu đẹp MXR 70" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c8e6c9,#1b5e20)\'>🏗️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tam cấp đá xanh rêu đẹp MXR 70</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="bamai granite" data-loaida="granite" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-ba-mai-granite-MBM71.jpg" alt="Mộ ba mái Granite sang trọng MBM 71" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#bf360c)\'>🏯</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ ba mái Granite sang trọng MBM 71</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="thap granite" data-loaida="granite" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-thap-granite-MTD72.jpg" alt="Mộ tháp Granite cao cấp MTD 72" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fff8e1,#f57f17)\'>🗼</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tháp Granite cao cấp MTD 72</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don trang khongmai" data-loaida="trang" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-don-trang-khong-mai-MDN73.jpg" alt="Mộ đơn đá trắng không mái MDN 73" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#eceff1,#9e9e9e)\'>🤍</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đơn đá trắng không mái MDN 73</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhden bamai" data-loaida="xanhden" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-xanh-den-ba-mai-MXD74.jpg" alt="Mộ đá xanh đen ba mái đẹp MXD 74" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#546e7a,#102027)\'>🏯</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đá xanh đen ba mái đẹp MXD 74</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamson trang" data-loaida="trang" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tam-son-trang-dep-MTS75.jpg" alt="Mộ Tam Sơn đá trắng đẹp MTS 75" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#78909c)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn đá trắng đẹp MTS 75</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tron granite khongmai" data-loaida="granite" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tron-granite-khong-mai-MTR76.jpg" alt="Mộ tròn Granite không mái MTR 76" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fff9c4,#ff6f00)\'>⭕</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tròn Granite không mái MTR 76</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="haimai granite" data-loaida="granite" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-hai-mai-granite-MHM77.jpg" alt="Mộ hai mái Granite sang trọng MHM 77" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe0b2,#e65100)\'>🏘️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ hai mái Granite sang trọng MHM 77</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="to granite bamai" data-loaida="granite" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-to-granite-ba-mai-MTT78.jpg" alt="Mộ tổ Granite ba mái họ tộc MTT 78" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fff9c4,#ff8f00)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tổ Granite ba mái họ tộc MTT 78</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhden tamson bamai" data-loaida="xanhden" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-xanh-den-tam-son-ba-mai-MTS79.jpg" alt="Mộ Tam Sơn xanh đen ba mái MTS 79" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#607d8b,#1a237e)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn xanh đen ba mái MTS 79</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao xanhden haimai" data-loaida="xanhden" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-cong-giao-xanh-den-hai-mai-MCG80.jpg" alt="Mộ công giáo xanh đen hai mái MCG 80" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#90a4ae,#263238)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ công giáo xanh đen hai mái MCG 80</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="motmai xanhden" data-loaida="xanhden" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-mot-mai-xanh-den-dep-MMM81.jpg" alt="Mộ một mái đá xanh đen đẹp MMM 81" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#78909c,#102027)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ một mái đá xanh đen đẹp MMM 81</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tron xanhreu khongmai" data-loaida="xanhreu" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tron-xanh-reu-khong-mai-MTR82.jpg" alt="Mộ tròn xanh rêu không mái MTR 82" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c8e6c9,#2e7d32)\'>⭕</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tròn xanh rêu không mái MTR 82</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="doi trang tamcap" data-loaida="trang" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-doi-trang-tam-cap-MDD83.jpg" alt="Mộ đôi đá trắng tam cấp MDD 83" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#757575)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đôi đá trắng tam cấp MDD 83</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="batgiac xanhden" data-loaida="xanhden" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-bat-giac-xanh-den-MBG84.jpg" alt="Mộ bát giác đá xanh đen MBG 84" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#90a4ae,#1a237e)\'>🔷</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ bát giác đá xanh đen MBG 84</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="thap trang maivom" data-loaida="trang" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-thap-da-trang-vom-MTD85.jpg" alt="Mộ tháp đá trắng vòm MTD 85" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#eeeeee,#616161)\'>🗼</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tháp đá trắng vòm MTD 85</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhreu bamai tamson" data-loaida="xanhreu" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-xanh-reu-tam-son-ba-mai-MXR86.jpg" alt="Mộ Tam Sơn xanh rêu ba mái MXR 86" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#a5d6a7,#1b5e20)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn xanh rêu ba mái MXR 86</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don xanhden motmai" data-loaida="xanhden" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-don-xanh-den-mot-mai-MDN87.jpg" alt="Mộ đơn xanh đen một mái MDN 87" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#546e7a,#102027)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đơn xanh đen một mái MDN 87</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="haimai trang doi" data-loaida="trang" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-hai-mai-trang-doi-MHM88.jpg" alt="Mộ hai mái trắng đôi đẹp MHM 88" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#9e9e9e)\'>🏘️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ hai mái trắng đôi đẹp MHM 88</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="to trang haimai" data-loaida="trang" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-to-trang-hai-mai-MTT89.jpg" alt="Mộ tổ đá trắng hai mái MTT 89" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#eceff1,#607d8b)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tổ đá trắng hai mái MTT 89</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="lucgiac xanhreu" data-loaida="xanhreu" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-luc-giac-xanh-reu-dep-MLG90.jpg" alt="Mộ lục giác xanh rêu đẹp MLG 90" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2dfdb,#004d40)\'>🔶</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ lục giác xanh rêu đẹp MLG 90</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="congiao granite motmai" data-loaida="granite" data-kieunmai="motmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-cong-giao-granite-MCG91.jpg" alt="Mộ công giáo Granite một mái MCG 91" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fff9c4,#e65100)\'>✝️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ công giáo Granite một mái MCG 91</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamcap xanhden doi" data-loaida="xanhden" data-kieunmai="khongmai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tam-cap-xanh-den-doi-MXD92.jpg" alt="Mộ tam cấp xanh đen đôi MXD 92" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#78909c,#1a237e)\'>🏗️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tam cấp xanh đen đôi MXD 92</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="bamai trang" data-loaida="trang" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-ba-mai-trang-MBM93.jpg" alt="Mộ ba mái đá trắng tinh tế MBM 93" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#f5f5f5,#bdbdbd)\'>🏯</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ ba mái đá trắng tinh tế MBM 93</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tamson granite" data-loaida="granite" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-tam-son-granite-dep-MTS94.jpg" alt="Mộ Tam Sơn Granite đẹp MTS 94" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#e65100)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn Granite đẹp MTS 94</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="tron granite maivom" data-loaida="granite" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-tron-granite-cao-cap-MTR95.jpg" alt="Mộ tròn Granite cao cấp MTR 95" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fff8e1,#ff6f00)\'>💎</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tròn Granite cao cấp MTR 95</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="don xanhreu haimai" data-loaida="xanhreu" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-don-xanh-reu-hai-mai-MDN96.jpg" alt="Mộ đơn xanh rêu hai mái MDN 96" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#c8e6c9,#1b5e20)\'>🏠</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đơn xanh rêu hai mái MDN 96</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="thap granite maivom" data-loaida="granite" data-kieunmai="maivom">
+            <div class="product-img-wrap"><img src="assets/img/mo-thap-granite-cao-cap-MTD97.jpg" alt="Mộ tháp Granite Phật giáo MTD 97" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#bf360c)\'>🗼</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tháp Granite Phật giáo MTD 97</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="to granite haimai" data-loaida="granite" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-to-granite-hai-mai-MTT98.jpg" alt="Mộ tổ Granite hai mái đẹp MTT 98" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#fff9c4,#f57f17)\'>🏛️</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ tổ Granite hai mái đẹp MTT 98</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="xanhreu tamson haimai" data-loaida="xanhreu" data-kieunmai="haimai">
+            <div class="product-img-wrap"><img src="assets/img/mo-xanh-reu-tam-son-hai-mai-MXR99.jpg" alt="Mộ Tam Sơn xanh rêu hai mái MXR 99" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#b2dfdb,#00695c)\'>🗿</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ Tam Sơn xanh rêu hai mái MXR 99</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="product-card" data-cat="doi granite bamai" data-loaida="granite" data-kieunmai="bamai">
+            <div class="product-img-wrap"><img src="assets/img/mo-doi-granite-ba-mai-cao-cap-MGR100.jpg" alt="Mộ đôi Granite ba mái cao cấp MGR 100" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\' style=\'background:linear-gradient(135deg,#ffe082,#e65100)\'>💎</div>'"></div>
+            <div class="product-info"><div class="product-name">Mộ đôi Granite ba mái cao cấp MGR 100</div><button class="btn-contact">LIÊN HỆ: 0912.98.67.98</button></div>
+          </div>
+
+          <div class="no-results" id="noResults" style="display:none">Không tìm thấy sản phẩm phù hợp.</div>
+        </div>
+
+        <div id="loadMoreWrap" style="text-align:center; margin: 28px 0 8px;">
+          <button id="btnLoadMore">
+            <span id="btnLoadMoreText">Xem thêm</span>
+            <svg id="btnArrow" viewBox="0 0 20 20" fill="none" width="16" height="16" style="margin-left:6px;vertical-align:middle;transition:transform 0.3s"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÀI VIẾT -->
+    <div id="articleSection" class="article-section">
+      <div class="article-inner">
+        <h2 class="article-h2">Mộ đá là gì? Tìm hiểu chi tiết về mộ đá đẹp tại Đá Mỹ Nghệ Ninh Bình</h2>
+        <p><strong>Mộ đá</strong> là một sản phẩm đá mỹ nghệ cao cấp, là công trình kiến trúc tâm linh được chế tác từ đá tự nhiên, sử dụng để chôn cất người đã khuất. Đá Mỹ Nghệ Ninh Bình là đơn vị uy tín hàng đầu, chuyên cung cấp và thi công đa dạng các loại mộ đá về cả kích thước lẫn mẫu mã, từ mộ đá đơn giản, mộ đá đôi, đến mộ đá hai mái, ba mái phức tạp,... được chế tác từ nhiều loại đá tự nhiên chất lượng như đá xanh đen, đá xanh rêu, đá trắng,... với mức giá hợp lý, chỉ từ <strong>6.000.000đ</strong>, phù hợp với nhiều nhu cầu khác nhau.</p>
+
+        <div class="toc-box">
+          <button class="toc-header" onclick="toggleToc(this)" aria-expanded="false">
+            <div class="toc-header-left">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="15" y2="18"/></svg>
+              Nội dung bài viết
+            </div>
+            <div class="toc-arrow" id="tocArrow">
+              <svg viewBox="0 0 20 20" fill="none" width="18" height="18"><path d="M5 8l5 5 5-5" stroke="#1565c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </button>
+          <div class="toc-body" id="tocBody">
+            <ul class="toc-list">
+              <li><span class="toc-num">1</span><a href="#section1" onclick="expandAndScroll('section1')">Mộ đá là gì?</a></li>
+              <li><span class="toc-num">2</span><a href="#section2" onclick="expandAndScroll('section2')">Mộ đá khác lăng mộ đá ở những điểm nào?</a></li>
+              <li><span class="toc-num">3</span><a href="#section3" onclick="expandAndScroll('section3')">Loại đá nào được sử dụng để làm mộ đá?</a></li>
+              <li><span class="toc-num">4</span><a href="#section4" onclick="expandAndScroll('section4')">Các mẫu mộ đá đẹp, chuẩn phong thủy tại Đá Mỹ Nghệ Ninh Bình</a></li>
+              <li><span class="toc-num">5</span><a href="#section5" onclick="expandAndScroll('section5')">Báo giá mộ đá đẹp mới nhất 2025</a></li>
+              <li><span class="toc-num">6</span><a href="#section6" onclick="expandAndScroll('section6')">Cách chọn mộ đá đẹp, hợp phong thủy</a></li>
+              <li><span class="toc-num">7</span><a href="#section7" onclick="expandAndScroll('section7')">Địa chỉ chế tác mộ đá uy tín</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="articleBody" class="article-body collapsed">
+          <h3 class="article-h3" id="section1">1. Mộ đá là gì?</h3>
+          <p>Mộ đá là công trình kiến trúc tâm linh được tạo tác hoàn toàn từ đá tự nhiên nguyên khối, dùng để an táng và tưởng niệm người đã khuất. Khác với mộ xây bằng gạch hay xi măng thông thường, mộ đá nổi bật với độ bền vượt trội theo thời gian, vẻ đẹp sang trọng, tinh tế và giá trị tâm linh sâu sắc trong văn hóa người Việt.</p>
+          <p>Các mẫu mộ đá được chế tác từ nhiều loại đá tự nhiên như <strong>đá xanh đen, đá xanh rêu, đá trắng, đá vàng, đá Granite (hoa cương)</strong> — mỗi loại mang màu sắc, đặc tính và ý nghĩa phong thủy riêng biệt.</p>
+
+          <h3 class="article-h3" id="section2">2. Mộ đá khác lăng mộ đá ở những điểm nào?</h3>
+          <div class="compare-table">
+            <table>
+              <thead><tr><th>Tiêu chí</th><th>Mộ đá</th><th>Lăng mộ đá</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Quy mô & cấu trúc</strong></td><td>Kích thước nhỏ, dùng cho một người. Cấu tạo đơn giản: đế, thân mộ, nắp đậy, bia ghi danh.</td><td>Công trình lớn, bao gồm nhiều phần mộ trong khuôn viên chung, dành cho cả gia đình hoặc dòng tộc.</td></tr>
+                <tr><td><strong>Mục đích sử dụng</strong></td><td>Nơi an nghỉ cho một hoặc hai người đã khuất.</td><td>Vừa là nơi an táng cho nhiều thế hệ, vừa là không gian thờ cúng, tưởng niệm chung.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="article-h3" id="section3">3. Loại đá nào được sử dụng để làm mộ đá?</h3>
+          <ul class="article-list">
+            <li><strong>Đá xanh đen:</strong> Khai thác chủ yếu từ Thanh Hóa và Nghệ An. Bề mặt mịn màng, sang trọng và độ cứng cao.</li>
+            <li><strong>Đá xanh rêu:</strong> Khai thác từ Yên Bái và Nghệ An. Màu xanh rêu đặc trưng, vân rõ nét, độ cứng và tuổi thọ cao.</li>
+            <li><strong>Đá trắng:</strong> Khai thác từ Ninh Bình và Yên Bái. Bề mặt mịn, đường vân tinh tế, vẻ đẹp thanh thoát.</li>
+            <li><strong>Đá Granite (hoa cương):</strong> Khả năng chịu lực tốt, không bị rêu phong, độ bóng cao.</li>
+            <li><strong>Đá vàng:</strong> Khai thác từ Thanh Hóa và Nghệ An. Bề mặt sáng bóng, ít thấm nước.</li>
+          </ul>
+
+          <h3 class="article-h3" id="section4">4. Các mẫu mộ đá đẹp, chuẩn phong thủy tại Đá Mỹ Nghệ Ninh Bình</h3>
+          <p>Dưới đây là tổng hợp các mẫu mộ đá đẹp được chế tác và thi công bởi Đá Mỹ Nghệ Ninh Bình, bao gồm: <strong>mộ đá đôi, mộ đá đơn, mộ đá xanh đen, mộ đá xanh rêu, mộ đá trắng, mộ đá vàng, mộ hai mái, mộ ba mái, mộ bát giác, mộ tròn, mộ Tam Sơn, mộ công giáo</strong>.</p>
+
+          <h3 class="article-h3" id="section5">5. Báo giá mộ đá đẹp mới nhất 2025</h3>
+          <div class="price-tables">
+            <div class="price-table-wrap">
+              <div class="price-table-title">Mộ đá không mái / Tam Sơn</div>
+              <table class="price-table">
+                <thead><tr><th>Kích thước (cm)</th><th>Đá xanh đen</th><th>Đá xanh rêu</th><th>Đá trắng</th></tr></thead>
+                <tbody>
+                  <tr><td>61 × 107</td><td>6.000.000đ</td><td>8.000.000đ</td><td>10.000.000đ</td></tr>
+                  <tr><td>69 × 107</td><td>6.500.000đ</td><td>8.500.000đ</td><td>10.500.000đ</td></tr>
+                  <tr><td>81 × 127</td><td>8.000.000đ</td><td>10.000.000đ</td><td>13.000.000đ</td></tr>
+                  <tr><td>89 × 127</td><td>14.000.000đ</td><td>16.000.000đ</td><td>19.000.000đ</td></tr>
+                  <tr><td>107 × 147</td><td>18.000.000đ</td><td>21.000.000đ</td><td>23.000.000đ</td></tr>
+                  <tr><td>107 × 172</td><td>22.000.000đ</td><td>24.000.000đ</td><td>26.000.000đ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="price-table-wrap">
+              <div class="price-table-title">Mộ đá hai mái</div>
+              <table class="price-table">
+                <thead><tr><th>Kích thước (cm)</th><th>Đá xanh đen</th><th>Đá xanh rêu</th><th>Đá trắng</th></tr></thead>
+                <tbody>
+                  <tr><td>81 × 127</td><td>15.000.000đ</td><td>20.000.000đ</td><td>26.000.000đ</td></tr>
+                  <tr><td>89 × 127</td><td>25.000.000đ</td><td>29.000.000đ</td><td>36.000.000đ</td></tr>
+                  <tr><td>107 × 147</td><td>31.000.000đ</td><td>39.000.000đ</td><td>46.000.000đ</td></tr>
+                  <tr><td>107 × 172</td><td>36.500.000đ</td><td>45.000.000đ</td><td>53.000.000đ</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="price-note">⚠️ Bảng giá chỉ mang tính tham khảo. Liên hệ <strong>0912.98.67.98</strong> để được báo giá chính xác.</p>
+
+          <h3 class="article-h3" id="section6">6. Cách chọn mộ đá đẹp, hợp phong thủy</h3>
+          <ul class="article-list">
+            <li><strong>Chọn chất liệu đá:</strong> Ưu tiên đá tự nhiên nguyên khối, không rạn nứt, màu sắc đồng đều.</li>
+            <li><strong>Kiểu dáng hoa văn:</strong> Phù hợp văn hóa tâm linh — Tứ linh, Tứ quý, hoa sen...</li>
+            <li><strong>Kích thước chuẩn phong thủy:</strong> Đo bằng thước Lỗ Ban âm trạch, rơi vào cung đỏ.</li>
+            <li><strong>Vị trí xây mộ:</strong> Chọn nơi thoáng đãng, tránh tù đọng nước.</li>
+            <li><strong>Đơn vị thi công:</strong> Chọn cơ sở có kinh nghiệm, tay nghề cao và uy tín.</li>
+          </ul>
+
+          <h3 class="article-h3" id="section7">7. Địa chỉ chế tác mộ đá uy tín</h3>
+          <p><strong>Đá Mỹ Nghệ Ninh Bình</strong> — hơn 10 năm kinh nghiệm, đội ngũ nghệ nhân hơn 15 năm tay nghề. Cam kết 100% đá tự nhiên nguyên khối, báo giá minh bạch, thi công toàn quốc.</p>
+          <div class="contact-info-box">
+            <div class="cib-row">📍 Số nhà 8, ngõ 158 đường Trần Phú, phường Phúc Thành, Ninh Bình</div>
+            <div class="cib-row">📞 <a href="tel:0912986798">0912.98.67.98</a></div>
+            <div class="cib-row">✉️ <a href="mailto:damynghe030@gmail.com">damynghe030@gmail.com</a></div>
+            <div class="cib-row">🌐 <a href="" target="_blank">langmodadep.com</a></div>
+          </div>
+        </div>
+
+        <div class="article-toggle-wrap">
+          <button class="article-toggle-btn" id="articleToggleBtn" onclick="toggleArticle()">
+            <span id="articleToggleText">Xem thêm</span>
+            <svg id="articleToggleArrow" viewBox="0 0 20 20" fill="none" width="14" height="14" style="margin-left:5px;vertical-align:middle;transition:transform 0.3s"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.mo-da-page -->
+</div>
+<!--nút quay về đầu trang ở góc-->
+<button id="scrollTopFixed" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Về đầu trang">
+  <i data-lucide="chevron-up" style="width:22px;height:22px;stroke:#ffffff;stroke-width:2;"></i>
+</button>
+<!--đoạn nhúng contact-buttons vr -->
+<div id="contact-buttons"></div>
+<script>
+fetch("../contact-buttons.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("contact-buttons").innerHTML = data;
+  });
+</script>
+
+<!-- ===== SCRIPT load-header.js — sau khi header render xong thì hiện body ===== -->
+<script>
+  // Hiện body ngay sau khi toàn bộ DOM + header đã sẵn sàng
+  // load-header.js của bạn nhúng header vào #header-placeholder
+  // Ta dùng MutationObserver để biết khi nào header đã inject xong
+  (function() {
+    var placeholder = document.getElementById('header-placeholder');
+    if (!placeholder) { document.body.classList.add('header-ready'); return; }
+
+    // Nếu header được inject synchronously (ít khi xảy ra)
+    if (placeholder.children.length > 0) {
+      document.body.classList.add('header-ready');
+      return;
+    }
+
+    // Theo dõi khi nào header được inject vào
+    var observer = new MutationObserver(function(mutations) {
+      if (placeholder.children.length > 0) {
+        observer.disconnect();
+        document.body.classList.add('header-ready');
+      }
+    });
+    observer.observe(placeholder, { childList: true, subtree: true });
+
+    // Fallback: sau 800ms nếu header chưa load vẫn hiện trang
+    setTimeout(function() {
+      observer.disconnect();
+      document.body.classList.add('header-ready');
+    }, 800);
+  })();
+</script>
+
+<script src="../assets/js/load-header.js"></script>
+
+<script>
+  const PAGE_SIZE = 20;
+  let currentPage = 1;
+  let activeCat = 'all';
+  let activeLoaiDa = 'all';
+  let activeKieuMai = 'all';
+
+  const allCards = Array.from(document.querySelectorAll('.product-card'));
+  const noResults = document.getElementById('noResults');
+  const loadMoreWrap = document.getElementById('loadMoreWrap');
+  const btnLoadMore = document.getElementById('btnLoadMore');
+  const btnText = document.getElementById('btnLoadMoreText');
+  const btnArrow = document.getElementById('btnArrow');
+
+  allCards.forEach(c => c.style.display = 'none');
+
+  function getMatchingCards() {
+    return allCards.filter(card => {
+      const cardCat = (card.dataset.cat || '').split(' ');
+      const cardLoaiDa = card.dataset.loaida || '';
+      const cardKieuMai = card.dataset.kieunmai || '';
+      const catMatch = activeCat === 'all' || cardCat.includes(activeCat);
+      const loaiDaMatch = activeLoaiDa === 'all' || cardLoaiDa === activeLoaiDa;
+      const kieuMaiMatch = activeKieuMai === 'all' || cardKieuMai === activeKieuMai;
+      return catMatch && loaiDaMatch && kieuMaiMatch;
+    });
+  }
+
+  function updateLoadMoreBtn(matching, shownCount) {
+    const remaining = matching.length - shownCount;
+    if (remaining > 0) {
+      loadMoreWrap.style.display = 'block';
+      btnText.textContent = 'Xem thêm (' + remaining + ' sản phẩm)';
+      btnArrow.style.transform = 'rotate(0deg)';
+      btnLoadMore.onclick = handleLoadMore;
+    } else {
+      if (matching.length === 0) {
+        loadMoreWrap.style.display = 'none';
+      } else {
+        loadMoreWrap.style.display = 'block';
+        btnText.textContent = 'Cuộn lên đầu trang';
+        btnArrow.style.transform = 'rotate(180deg)';
+        btnLoadMore.onclick = scrollToTop;
+      }
+    }
+  }
+
+  function applyFilters() {
+    currentPage = 1;
+    const matching = getMatchingCards();
+    allCards.forEach(c => c.style.display = 'none');
+    const toShow = matching.slice(0, PAGE_SIZE);
+    toShow.forEach(card => { card.style.display = ''; });
+    noResults.style.display = matching.length === 0 ? 'block' : 'none';
+    updateLoadMoreBtn(matching, toShow.length);
+  }
+
+  function handleLoadMore() {
+    currentPage++;
+    const matching = getMatchingCards();
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = currentPage * PAGE_SIZE;
+    const toShow = matching.slice(start, end);
+    toShow.forEach((card, i) => {
+      card.style.display = '';
+      card.style.animationDelay = (i * 40) + 'ms';
+      card.classList.remove('card-appear');
+      void card.offsetWidth;
+      card.classList.add('card-appear');
+    });
+    const totalShown = Math.min(end, matching.length);
+    updateLoadMoreBtn(matching, totalShown);
+  }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => { applyFilters(); }, 600);
+  }
+
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('scrollTopFixed');
+    if (window.scrollY > 400) btn.classList.add('visible');
+    else btn.classList.remove('visible');
+  });
+
+  function toggleToc(btn) {
+    const body = document.getElementById('tocBody');
+    const arrow = document.getElementById('tocArrow');
+    const isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    arrow.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+  }
+
+  function expandAndScroll(sectionId) {
+    const body = document.getElementById('articleBody');
+    if (body.classList.contains('collapsed')) {
+      body.classList.remove('collapsed');
+      body.classList.add('expanded');
+      document.getElementById('articleToggleText').textContent = 'Thu gọn';
+      document.getElementById('articleToggleArrow').style.transform = 'rotate(180deg)';
+    }
+    setTimeout(() => {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+    return false;
+  }
+
+  function toggleFilter(titleBtn) {
+    const wrap = titleBtn.nextElementSibling;
+    const icon = titleBtn.querySelector('.filter-toggle-icon');
+    const isOpen = wrap.classList.contains('open');
+    wrap.classList.toggle('open', !isOpen);
+    icon.textContent = isOpen ? '+' : '−';
+  }
+
+  let articleExpanded = false;
+  function toggleArticle() {
+    articleExpanded = !articleExpanded;
+    const body = document.getElementById('articleBody');
+    body.classList.toggle('collapsed', !articleExpanded);
+    body.classList.toggle('expanded', articleExpanded);
+    document.getElementById('articleToggleText').textContent = articleExpanded ? 'Thu gọn' : 'Xem thêm';
+    document.getElementById('articleToggleArrow').style.transform = articleExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+  }
+
+  document.querySelectorAll('.cat-tag').forEach(tag => {
+    tag.addEventListener('click', function() {
+      document.querySelectorAll('.cat-tag').forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      activeCat = this.dataset.cat;
+      applyFilters();
+    });
+  });
+  document.querySelectorAll('input[name="loaida"]').forEach(r => {
+    r.addEventListener('change', function() { activeLoaiDa = this.value; applyFilters(); });
+  });
+  document.querySelectorAll('input[name="kieunmai"]').forEach(r => {
+    r.addEventListener('change', function() { activeKieuMai = this.value; applyFilters(); });
+  });
+
+  applyFilters();
+  // Khởi tạo Lucide icons (bao gồm chevron-up trong scrollTopFixed quay về đầu trang)
+if (typeof lucide !== 'undefined') lucide.createIcons();
+
+</script>
+<script src="../assets/js/load-header.js"></script>
+</body>
+</html>

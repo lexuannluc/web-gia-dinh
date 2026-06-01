@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên Hệ - Đá Mỹ Nghệ</title>
+
+<link rel="stylesheet" href="/assets/style.css">
+    <!-- CSS chung -->
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <!-- SmartSearch engine -->
+  <script src="/assets/js/smart-search.js"></script>
+
+  <!-- Load header tự động -->
+  <script src="/assets/js/load-header.js"></script>
+
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+
+<!-- ✅ HEADER NHÚNG TỪ header.html -->
+
+<div id="header-placeholder"></div>
+
+<!-- BANNER TRANG LIÊN HỆ -->
+<div class="page-banner">
+    <h1>Liên Hệ</h1>
+    <p>Đá Mỹ Nghệ Cao Cấp - Chất Lượng Hàng Đầu</p>
+</div>
+
+<!-- NỘI DUNG -->
+
+<div class="lienhe-container">
+
+    <!-- THÔNG TIN -->
+    <div class="lienhe-box">
+        <h2>Thông Tin Liên Hệ</h2>
+
+        <div class="info-item">
+            <strong>Cơ sở:</strong><br>
+            Đá Mỹ Nghệ Thanh Hóa
+        </div>
+
+        <div class="info-item">
+            <strong>Địa chỉ:</strong><br>
+            Làng nghề đá mỹ nghệ Ninh Vân, Hoa Lư, Ninh Bình
+        </div>
+
+        <div class="info-item">
+            <strong>Hotline:</strong><br>
+            <a href="tel:0912986798" style="color:#8b5a2b">0912.98.67.98</a>
+        </div>
+
+        <div class="info-item">
+            <strong>Email:</strong><br>
+            <a href="mailto:damynghethanhhoa030@gmail.com" style="color:#8b5a2b">damynghethanhhoa030@gmail.com</a>
+        </div>
+
+        <div class="info-item">
+            <strong>Thời gian làm việc:</strong><br>
+            7h00 - 18h00 tất cả các ngày
+        </div>
+    </div>
+
+    <!-- FORM GỬI -->
+    <div class="lienhe-box">
+        <h2>Gửi Thông Tin</h2>
+
+        <input type="text" placeholder="Họ và tên" required>
+        <input type="tel" placeholder="Số điện thoại" required>
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Nội dung cần tư vấn"></textarea>
+        <button type="button">Gửi Liên Hệ</button>
+    </div>
+
+</div>
+
+<!-- BẢN ĐỒ -->
+<div class="lienhe-map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.514095586351!2d105.937799!3d20.250614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313670d5f03dcd8d%3A0x8a6f4ef6bfc0e5b4!2zTmluaCBWw6JuLCBIb2EgTMawLCBOaW5oIELDrG5o!5e0!3m2!1svi!2s!4v1690000000000!5m2!1svi!2s"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+
+
+<div id="contact-buttons"></div>
+<script>
+fetch("../contact-buttons.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("contact-buttons").innerHTML = data;
+  });
+</script>
+
+<!-- ✅ FOOTER tự động -->
+  <div id="site-footer"></div>
+  <script src="/assets/js/load-footer.js"></script>
+</body>
+</html>
