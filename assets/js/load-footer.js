@@ -24,7 +24,7 @@
     var placeholder = document.getElementById('site-footer');
     if (!placeholder) return;
 
-    fetch('/footer.html')
+    fetch('footer.html')
       .then(function (res) {
         if (!res.ok) throw new Error('Không tải được footer.html – HTTP ' + res.status);
         return res.text();

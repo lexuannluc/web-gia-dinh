@@ -22,7 +22,7 @@
   insertPlaceholder();
 
   function loadHeader() {
-    fetch('/header.html')
+    fetch('header.html')
       .then(function (res) {
         if (!res.ok) throw new Error('Không tải được header.html – HTTP ' + res.status);
         return res.text();
