@@ -229,8 +229,8 @@
           maxProducts: 6,
           maxBlogs: 3,
           dataUrls: {
-            products: '/assets/data/mo-da.json',
-            blogs:    '/assets/data/blog.json'
+            products: 'assets/data/mo-da.json',
+            blogs:    'assets/data/blog.json'
           }
         });
       } else {
