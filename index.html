@@ -10,13 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS chung -->
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="assets/style.css">
 
   <!-- SmartSearch engine -->
-  <script src="/assets/js/smart-search.js"></script>
+  <script src="assets/js/smart-search.js"></script>
 
   <!-- Load header tự động -->
-  <script src="/assets/js/load-header.js"></script>
+  <script src="assets/js/load-header.js"></script>
 
   <script src="https://unpkg.com/lucide@latest" defer></script>
 </head>
@@ -392,7 +392,7 @@
 </script>
 <!-- nhúng cotact-buttons vr-->
 <script>
-fetch("/contact-buttons.html")
+fetch("contact-buttons.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("contact-buttons").innerHTML = data;
@@ -400,6 +400,6 @@ fetch("/contact-buttons.html")
 </script>
 <!-- ✅ FOOTER tự động -->
   <div id="site-footer"></div>
-  <script src="/assets/js/load-footer.js"></script>
+  <script src="assets/js/load-footer.js"></script>
 </body>
 </html>
