@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-
+var BASE = location.pathname.includes('/gioi-thieu/') ? '../' : '';
   // Tạo placeholder ngay khi script chạy (trước DOMContentLoaded)
   var placeholder = document.createElement('div');
   placeholder.id = 'site-header';
@@ -22,7 +22,7 @@
   insertPlaceholder();
 
   function loadHeader() {
-    fetch('header.html')
+    fetch(BASE + 'header.html')
       .then(function (res) {
         if (!res.ok) throw new Error('Không tải được header.html – HTTP ' + res.status);
         return res.text();
@@ -229,8 +229,8 @@
           maxProducts: 6,
           maxBlogs: 3,
           dataUrls: {
-            products: 'assets/data/mo-da.json',
-            blogs:    'assets/data/blog.json'
+          products: BASE + 'assets/data/mo-da.json',
+          blogs: BASE + 'assets/data/blog.json'
           }
         });
       } else {
