@@ -4,9 +4,7 @@
 */
 (function () {
   'use strict';
-var BASE = location.pathname.includes('/gioi-thieu/') ? '../' : '';
 
-fetch(BASE + 'footer.html')
   /* ── Khởi tạo nút scroll-to-top ── */
   function initScrollTop() {
     var btn = document.getElementById('scrollTopFixed');
@@ -26,7 +24,7 @@ fetch(BASE + 'footer.html')
     var placeholder = document.getElementById('site-footer');
     if (!placeholder) return;
 
-    fetch(BASE + 'footer.html')
+    fetch('/footer.html')
       .then(function (res) {
         if (!res.ok) throw new Error('Không tải được footer.html – HTTP ' + res.status);
         return res.text();
